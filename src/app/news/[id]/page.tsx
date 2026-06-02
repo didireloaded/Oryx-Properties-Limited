@@ -7,7 +7,7 @@ export default async function ArticlePage({ params }: { params: { id: string } }
   
   try {
     const allNews = await NewsService.getNews();
-    article = allNews.find(n => n.id === params.id);
+    article = allNews.find(n => n.id.toString() === params.id);
   } catch (error) {
     console.error("Error fetching article details:", error);
   }

@@ -9,6 +9,7 @@ export interface NewsArticle {
   image: string;
   category: string;
   type: string;
+  content?: string;
 }
 
 export class NewsService {
