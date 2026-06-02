@@ -56,7 +56,22 @@ export default function AboutClient({ teamData }: { teamData: TeamMember[] }) {
         </div>
       </section>
 
-      {/* 2.5 GOVERNANCE OVERVIEW */}
+      {/* 2.5 JOURNEY LINK */}
+      <section className="section" style={{ backgroundColor: 'transparent', paddingTop: 0, paddingBottom: '4rem' }}>
+        <div className="container">
+          <div className="glass-panel-10" style={{ padding: '3rem', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', border: '1px solid var(--border-glass)' }}>
+            <div>
+              <h3 style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300, marginBottom: '0.5rem' }}>Our Journey</h3>
+              <p style={{ color: 'var(--text-muted)', fontSize: '1.125rem' }}>Discover our path from inception to becoming Namibia's premier property fund.</p>
+            </div>
+            <a href="/journey" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              Explore the Timeline <ChevronRight size={18} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 2.75 GOVERNANCE OVERVIEW */}
       <section className="section" style={{ backgroundColor: 'rgba(15, 20, 35, 0.4)', borderTop: '1px solid var(--border-glass)', borderBottom: '1px solid var(--border-glass)' }}>
         <div className="container">
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>

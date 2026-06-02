@@ -61,6 +61,16 @@ const calendarEvents = [
   { date: '05 Sep 2025', title: 'Annual Results Announcement', type: 'Financials' },
 ];
 
+const mockHistoricalData = {
+  '1D': [{ date: '09:00', price: 4.65 }, { date: '10:00', price: 4.66 }, { date: '11:00', price: 4.68 }, { date: '12:00', price: 4.67 }, { date: '13:00', price: 4.69 }, { date: '14:00', price: 4.70 }, { date: '15:00', price: 4.68 }],
+  '5D': [{ date: 'Mon', price: 4.60 }, { date: 'Tue', price: 4.62 }, { date: 'Wed', price: 4.65 }, { date: 'Thu', price: 4.63 }, { date: 'Fri', price: 4.68 }],
+  '1M': Array.from({ length: 30 }, (_, i) => ({ date: `Day ${i+1}`, price: 4.50 + Math.sin(i/3) * 0.2 + (i/30)*0.2 })),
+  '6M': Array.from({ length: 6 }, (_, i) => ({ date: `Month ${i+1}`, price: 4.20 + (i/6)*0.5 + Math.random()*0.1 })),
+  '1Y': Array.from({ length: 12 }, (_, i) => ({ date: `Month ${i+1}`, price: 4.00 + (i/12)*0.8 + Math.random()*0.2 })),
+  '5Y': [{ date: '2020', price: 3.80 }, { date: '2021', price: 4.00 }, { date: '2022', price: 4.20 }, { date: '2023', price: 4.50 }, { date: '2024', price: 4.69 }],
+  'ALL': [{ date: '2015', price: 2.50 }, { date: '2018', price: 3.20 }, { date: '2021', price: 4.00 }, { date: '2024', price: 4.69 }],
+};
+
 export default function InvestorCentre() {
   const [activeMetric, setActiveMetric] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -289,7 +299,7 @@ export default function InvestorCentre() {
             <div className="glass-card-premium" style={{ height: '450px', padding: '2.5rem' }}>
               {marketData ? (
                 <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
-                  <AreaChart data={marketData.historical[chartPeriod]}>
+                  <AreaChart data={marketData.historical ? marketData.historical[chartPeriod] : mockHistoricalData[chartPeriod as keyof typeof mockHistoricalData]}>
                     <defs>
                       <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="5%" stopColor="var(--accent-gold)" stopOpacity={0.4}/>
