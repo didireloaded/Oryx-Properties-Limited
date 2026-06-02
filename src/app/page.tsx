@@ -136,29 +136,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. INVESTOR UPDATES PREVIEW */}
-      <section className="section" style={{ backgroundColor: 'var(--bg-secondary)', borderTop: '1px solid var(--border-glass)' }}>
-        <div className="container">
-          <h2 style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300, marginBottom: '3rem', textAlign: 'center' }}>Latest Market Announcements</h2>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
-            {[
-              { date: '12 OCT 2024', title: 'Declaration of Final Dividend for the year ended 30 June 2024' },
-              { date: '28 SEP 2024', title: 'Audited Financial Results for the year ended 30 June 2024' },
-              { date: '15 AUG 2024', title: 'Trading Statement regarding Financial Results' }
-            ].map((news, i) => (
-              <div key={i} className="glass-panel-10" style={{ padding: '2rem', borderRadius: '4px', cursor: 'pointer' }}>
-                <div style={{ color: 'var(--accent-gold)', fontSize: '0.75rem', fontFamily: 'monospace', marginBottom: '1rem' }}>{news.date}</div>
-                <h4 style={{ color: 'var(--text-light)', fontSize: '1.125rem', lineHeight: 1.4 }}>{news.title}</h4>
-              </div>
-            ))}
-          </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-             <Link href="/news" style={{ color: 'var(--accent-gold)', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem', textDecoration: 'none' }}>View All Announcements</Link>
-          </div>
-        </div>
-      </section>
+
 
     </div>
   );

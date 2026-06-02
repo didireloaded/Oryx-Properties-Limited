@@ -1,0 +1,1 @@
+const axios = require('axios'); const cheerio = require('cheerio'); axios.get('https://oryxprop.com').then(res => { const $ = cheerio.load(res.data); console.log($('img').map((i, el) => $(el).attr('src')).get().filter(src => src && src.toLowerCase().includes('logo'))); })

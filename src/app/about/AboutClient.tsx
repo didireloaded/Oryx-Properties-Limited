@@ -7,6 +7,7 @@ import { TeamMember } from '@/services/TeamService';
 
 export default function AboutClient({ teamData }: { teamData: TeamMember[] }) {
   const [selectedPerson, setSelectedPerson] = useState<TeamMember | null>(null);
+  const [hoveredPerson, setHoveredPerson] = useState<string | null>(null);
 
   const directors = teamData.filter(m => m.category === 'directors');
   const executives = teamData.filter(m => m.category === 'executives');
@@ -55,6 +56,32 @@ export default function AboutClient({ teamData }: { teamData: TeamMember[] }) {
         </div>
       </section>
 
+      {/* 2.5 GOVERNANCE OVERVIEW */}
+      <section className="section" style={{ backgroundColor: 'rgba(15, 20, 35, 0.4)', borderTop: '1px solid var(--border-glass)', borderBottom: '1px solid var(--border-glass)' }}>
+        <div className="container">
+          <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+            <h2 style={{ fontSize: '2.5rem', color: 'var(--text-light)', fontWeight: 300, marginBottom: '1.5rem' }}>Corporate Governance</h2>
+            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.6, marginBottom: '3rem' }}>
+              We uphold the highest standards of transparency, integrity, and ethical business practices. Our dedicated board committees (Audit & Risk, Remuneration & Nomination, and Investment) ensure robust oversight across all critical business functions.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', textAlign: 'left' }}>
+              <div className="glass-panel-10" style={{ padding: '1.5rem', borderRadius: '4px' }}>
+                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '0.5rem' }}>Audit & Risk</h4>
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Ensures integrity of financial reporting and effectiveness of internal controls.</p>
+              </div>
+              <div className="glass-panel-10" style={{ padding: '1.5rem', borderRadius: '4px' }}>
+                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '0.5rem' }}>Remuneration</h4>
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Oversees board nominations and remuneration policies for executives.</p>
+              </div>
+              <div className="glass-panel-10" style={{ padding: '1.5rem', borderRadius: '4px' }}>
+                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '0.5rem' }}>Investment</h4>
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>Reviews and approves property acquisitions and major capital expenditures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3. LEADERSHIP (B&W to Color Apple Modal) */}
       <section className="section">
         <div className="container">
@@ -63,9 +90,9 @@ export default function AboutClient({ teamData }: { teamData: TeamMember[] }) {
             <h2 style={{ fontSize: '3rem', color: 'var(--text-light)', fontWeight: 300, borderBottom: '2px solid rgba(255,255,255,0.1)', paddingBottom: '1rem', marginBottom: '3rem' }}>Board of Directors</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '2rem' }}>
               {directors.map((person, i) => (
-                <div key={i} onClick={() => setSelectedPerson(person)} style={{ cursor: 'pointer' }} className="group">
+                <div key={i} onClick={() => setSelectedPerson(person)} onMouseEnter={() => setHoveredPerson(person.name)} onMouseLeave={() => setHoveredPerson(null)} style={{ cursor: 'pointer' }}>
                   <div style={{ width: '100%', aspectRatio: '3/4', backgroundColor: 'rgba(255,255,255,0.05)', marginBottom: '1rem', overflow: 'hidden', borderRadius: '4px' }}>
-                    <img src={person.image} alt={person.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(100%)', transition: 'filter 0.3s' }} className="group-hover:grayscale-0" />
+                    <img src={person.image} alt={person.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: hoveredPerson === person.name ? 'grayscale(0%)' : 'grayscale(100%)', transition: 'filter 0.5s ease' }} />
                   </div>
                   <h4 style={{ fontSize: '1.125rem', color: 'var(--text-light)', fontWeight: 500 }}>{person.name}</h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>{person.role}</p>
@@ -78,9 +105,9 @@ export default function AboutClient({ teamData }: { teamData: TeamMember[] }) {
             <h2 style={{ fontSize: '3rem', color: 'var(--text-light)', fontWeight: 300, borderBottom: '2px solid rgba(255,255,255,0.1)', paddingBottom: '1rem', marginBottom: '3rem' }}>Executive Management</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
               {executives.map((person, i) => (
-                <div key={i} onClick={() => setSelectedPerson(person)} style={{ cursor: 'pointer' }} className="group">
+                <div key={i} onClick={() => setSelectedPerson(person)} onMouseEnter={() => setHoveredPerson(person.name)} onMouseLeave={() => setHoveredPerson(null)} style={{ cursor: 'pointer' }}>
                   <div style={{ width: '100%', aspectRatio: '3/4', backgroundColor: 'rgba(255,255,255,0.05)', marginBottom: '1rem', overflow: 'hidden', borderRadius: '4px' }}>
-                     <img src={person.image} alt={person.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(100%)', transition: 'filter 0.3s' }} className="group-hover:grayscale-0" />
+                     <img src={person.image} alt={person.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: hoveredPerson === person.name ? 'grayscale(0%)' : 'grayscale(100%)', transition: 'filter 0.5s ease' }} />
                   </div>
                   <h4 style={{ fontSize: '1.125rem', color: 'var(--text-light)', fontWeight: 500 }}>{person.name}</h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>{person.role}</p>

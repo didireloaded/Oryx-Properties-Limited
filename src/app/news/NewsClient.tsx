@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Clock } from 'lucide-react';
+import Link from 'next/link';
 import { NewsArticle } from '@/services/NewsService';
 
 export default function NewsClient({ newsData }: { newsData: NewsArticle[] }) {
@@ -39,7 +40,7 @@ export default function NewsClient({ newsData }: { newsData: NewsArticle[] }) {
               {corporateNews.length > 0 && (
                 <>
                   {/* Lead Story */}
-                  <div style={{ marginBottom: '4rem', cursor: 'pointer' }} className="group">
+                  <Link href={`/news/${corporateNews[0].id}`} style={{ display: 'block', textDecoration: 'none', marginBottom: '4rem', cursor: 'pointer' }} className="group">
                     <div style={{ width: '100%', height: '450px', marginBottom: '2rem', overflow: 'hidden' }}>
                       <img src={corporateNews[0].image} alt={corporateNews[0].title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }} className="group-hover:scale-105" />
                     </div>
@@ -47,21 +48,21 @@ export default function NewsClient({ newsData }: { newsData: NewsArticle[] }) {
                       <span style={{ color: 'var(--accent-gold)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>{corporateNews[0].category}</span>
                       <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}><Clock size={14} /> {corporateNews[0].date}</span>
                     </div>
-                    <h3 style={{ fontSize: '2.5rem', fontWeight: 300, lineHeight: 1.2, marginBottom: '1rem', transition: 'color 0.2s' }} className="group-hover:text-gold">{corporateNews[0].title}</h3>
+                    <h3 style={{ fontSize: '2.5rem', fontWeight: 300, lineHeight: 1.2, marginBottom: '1rem', transition: 'color 0.2s', color: 'var(--text-light)' }} className="group-hover:text-accent-gold">{corporateNews[0].title}</h3>
                     <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{corporateNews[0].excerpt}</p>
-                  </div>
+                  </Link>
 
                   {/* Secondary Stories */}
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
                     {corporateNews.slice(1).map((news, i) => (
-                      <div key={i} style={{ borderTop: '1px solid var(--border-subtle)', paddingTop: '2rem', cursor: 'pointer' }} className="group">
+                      <Link href={`/news/${news.id}`} key={i} style={{ display: 'block', textDecoration: 'none', borderTop: '1px solid var(--border-subtle)', paddingTop: '2rem', cursor: 'pointer' }} className="group">
                         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1rem' }}>
                           <span style={{ color: 'var(--accent-gold)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>{news.category}</span>
                         </div>
-                        <h3 style={{ fontSize: '1.5rem', fontWeight: 300, lineHeight: 1.3, marginBottom: '1rem', transition: 'color 0.2s' }} className="group-hover:text-gold">{news.title}</h3>
+                        <h3 style={{ fontSize: '1.5rem', fontWeight: 300, lineHeight: 1.3, marginBottom: '1rem', transition: 'color 0.2s', color: 'var(--text-light)' }} className="group-hover:text-accent-gold">{news.title}</h3>
                         <p style={{ fontSize: '1rem', color: 'var(--text-muted)', lineHeight: 1.6, marginBottom: '1.5rem' }}>{news.excerpt}</p>
                         <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}><Clock size={14} /> {news.date}</div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </>
@@ -76,15 +77,15 @@ export default function NewsClient({ newsData }: { newsData: NewsArticle[] }) {
 
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 {marketAnnouncements.map((announcement, i) => (
-                  <div key={i} style={{ padding: '1.5rem 0', borderBottom: '1px solid var(--border-subtle)', cursor: 'pointer' }} className="group">
+                  <Link href={`/news/${announcement.id}`} key={i} style={{ display: 'block', textDecoration: 'none', padding: '1.5rem 0', borderBottom: '1px solid var(--border-subtle)', cursor: 'pointer' }} className="group">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
                       <div style={{ fontSize: '0.75rem', color: 'var(--accent-gold)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>{announcement.category}</div>
                       <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontFamily: 'monospace' }}>{announcement.date}</div>
                     </div>
-                    <h4 style={{ fontSize: '1.125rem', color: 'var(--text-light)', lineHeight: 1.4, transition: 'color 0.2s' }} className="group-hover:text-gold">
+                    <h4 style={{ fontSize: '1.125rem', color: 'var(--text-light)', lineHeight: 1.4, transition: 'color 0.2s' }} className="group-hover:text-accent-gold">
                       {announcement.title}
                     </h4>
-                  </div>
+                  </Link>
                 ))}
               </div>
 
