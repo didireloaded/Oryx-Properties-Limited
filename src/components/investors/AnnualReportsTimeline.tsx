@@ -64,7 +64,7 @@ export function AnnualReportsTimeline() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="group cursor-pointer flex flex-col"
             >
-              <div className="relative w-full aspect-[1/1.4] rounded-2xl overflow-hidden mb-6 border border-white/10 glass-panel-15 flex items-center justify-center">
+              <div className="relative w-full aspect-[1/1.4] rounded-2xl overflow-hidden mb-6 border border-white/10 glass-panel-35 flex items-center justify-center">
                 {/* Fallback Cover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#172033] to-[#0F172A] opacity-80"></div>
                 
@@ -90,7 +90,7 @@ export function AnnualReportsTimeline() {
                   <a 
                     href={report.file_url} 
                     download
-                    className="w-12 h-12 rounded-full glass-panel-15 border border-white/20 text-white flex items-center justify-center transition-transform duration-300 hover:scale-110 hover:bg-white/10"
+                    className="w-12 h-12 rounded-full glass-panel-35 border border-white/20 text-white flex items-center justify-center transition-transform duration-300 hover:scale-110 hover:bg-white/10"
                   >
                     <Download className="w-5 h-5" />
                   </a>

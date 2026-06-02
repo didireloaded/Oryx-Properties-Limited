@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Clock } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, User, Tag, Share2, Printer } from 'lucide-react';
+import Image from 'next/image';
 import { NewsArticle } from '@/services/NewsService';
 
 export default function ArticleClient({ article }: { article: NewsArticle }) {
@@ -25,8 +26,8 @@ export default function ArticleClient({ article }: { article: NewsArticle }) {
         </header>
 
         {article.image && (
-          <div style={{ width: '100%', aspectRatio: '16/9', marginBottom: '3rem', borderRadius: '12px', overflow: 'hidden' }}>
-            <img src={article.image} alt={article.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <div style={{ width: '100%', height: '500px', backgroundColor: 'var(--bg-secondary)', overflow: 'hidden', position: 'relative' }}>
+            <Image src={article.image} alt={article.title} fill style={{ objectFit: 'cover' }} priority />
           </div>
         )}
 

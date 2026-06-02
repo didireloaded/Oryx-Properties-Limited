@@ -55,7 +55,7 @@ export function NensTimeline() {
             {/* Timeline Dot */}
             <div className="absolute -left-[31px] md:-left-[47px] top-1.5 w-3 h-3 rounded-full bg-[#B78A2D] shadow-[0_0_10px_rgba(183,138,45,0.5)] group-hover:scale-150 transition-transform duration-300"></div>
             
-            <div className="glass-panel-15 p-5 rounded-xl border border-white/5 hover:bg-white/5 hover:border-white/10 transition-all duration-300">
+            <div className="glass-panel-35 p-5 rounded-xl border border-white/5 hover:bg-white/5 hover:border-white/10 transition-all duration-300">
               <div className="flex justify-between items-start mb-2">
                 <span className="text-xs font-bold text-[#B78A2D] uppercase tracking-wider bg-[#B78A2D]/10 px-2 py-1 rounded">
                   {announcement.published_date || announcement.year}
@@ -64,7 +64,7 @@ export function NensTimeline() {
                 <a 
                   href={announcement.file_url}
                   download
-                  className="w-8 h-8 rounded-full glass-panel-15 flex items-center justify-center text-white/50 hover:text-white hover:bg-white/10 transition-colors"
+                  className="w-8 h-8 rounded-full glass-panel-35 flex items-center justify-center text-white/50 hover:text-white hover:bg-white/10 transition-colors"
                 >
                   <Download className="w-3 h-3" />
                 </a>

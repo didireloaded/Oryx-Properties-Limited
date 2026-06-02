@@ -201,20 +201,32 @@ p {
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--border-glass);
 }
-.glass-panel-10 {
-  background: rgba(15, 20, 35, 0.1);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid var(--border-glass);
-}
 .glass-panel-05 {
   background: rgba(15, 20, 35, 0.05);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--border-glass);
 }
+.glass-panel-10 {
+  background: rgba(15, 20, 35, 0.10);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-glass);
+}
 .glass-panel-15 {
   background: rgba(15, 20, 35, 0.15);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-glass);
+}
+.glass-panel-20 {
+  background: rgba(15, 20, 35, 0.20);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-glass);
+}
+.glass-panel-25 {
+  background: rgba(15, 20, 35, 0.25);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--border-glass);

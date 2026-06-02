@@ -53,7 +53,7 @@ export function GovernanceCentre() {
             
             <div className="grid grid-cols-2 gap-4">
               {categories.map((cat, i) => (
-                <div key={i} className="glass-panel-15 p-4 rounded-xl border border-white/5 flex flex-col gap-3">
+                <div key={i} className="glass-panel-35 p-4 rounded-xl border border-white/5 flex flex-col gap-3">
                   <div className="text-[#B78A2D]">{cat.icon}</div>
                   <div>
                     <div className="text-white font-medium text-sm">{cat.title}</div>
@@ -82,7 +82,7 @@ export function GovernanceCentre() {
                   className="flex items-center justify-between p-4 rounded-xl hover:bg-white/5 transition-colors group cursor-pointer border border-transparent hover:border-white/5"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full glass-panel-15 flex items-center justify-center text-white/50 group-hover:text-[#B78A2D]">
+                    <div className="w-10 h-10 rounded-full glass-panel-35 flex items-center justify-center text-white/50 group-hover:text-[#B78A2D]">
                       <FileText className="w-4 h-4" />
                     </div>
                     <div>

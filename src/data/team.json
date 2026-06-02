@@ -24,7 +24,7 @@
     "name": "Marius Muller",
     "role": "Independent Non-Executive Director, IC Chairperson",
     "bio": "Mr. Muller possesses decades of experience in the real estate and property management industry. He provides critical guidance on asset acquisitions, valuations, and portfolio optimization.",
-    "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop",
+    "image": "",
     "category": "directors"
   },
   {
@@ -38,14 +38,14 @@
     "name": "Stefan Hugo",
     "role": "Independent Non-Executive Director",
     "bio": "Mr. Hugo brings robust financial, auditing, and corporate governance expertise to Oryx Properties, ensuring the highest standards of transparency and fiduciary responsibility.",
-    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
+    "image": "",
     "category": "directors"
   },
   {
     "name": "Matthias Langheld",
     "role": "Independent Non-Executive Director",
     "bio": "Mr. Langheld provides vital strategic input regarding property development, legal frameworks, and compliance within the Namibian real estate sector.",
-    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop",
+    "image": "",
     "category": "directors"
   },
   {
@@ -87,7 +87,7 @@
     "name": "Lourens Anderson",
     "role": "Asset Manager",
     "bio": "Mr. Anderson works closely with the Chief Asset Manager to optimize building performance, oversee capital expenditure projects, and ensure the portfolio's physical assets are maintained to the highest standards.",
-    "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop",
+    "image": "",
     "category": "executives"
   },
   {
@@ -114,7 +114,7 @@
   {
     "name": "Ben Jooste",
     "role": "Chief Executive Officer",
-    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop",
+    "image": "",
     "bio": "Ben brings over 20 years of real estate and corporate finance experience. He is responsible for the overall strategic direction of the fund and capital allocation.",
     "quals": "CA(SA), CFA Charterholder",
     "category": "management"
@@ -122,7 +122,7 @@
   {
     "name": "Francis Heunis",
     "role": "Chief Financial Officer",
-    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop",
+    "image": "",
     "bio": "Francis manages the financial, treasury, and capital management operations of Oryx Properties. She ensures robust financial reporting to all stakeholders.",
     "quals": "BCom (Hons), CA(NAM)",
     "category": "management"
@@ -130,9 +130,11 @@
   {
     "name": "Peter Grüttemeyer",
     "role": "Independent Non-Executive Chairman",
-    "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop",
+    "image": "",
     "bio": "Peter has extensive experience in corporate governance and statutory oversight within the Namibian financial sector.",
     "quals": "BCom, LLB",
+    "experience": "Served as independent director on multiple NSX-listed boards over the past 15 years.",
+    "committees": ["Audit & Risk", "Remuneration"],
     "category": "management"
   }
 ]

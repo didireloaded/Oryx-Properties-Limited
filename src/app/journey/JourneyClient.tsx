@@ -2,7 +2,13 @@
 
 import { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import dynamic from 'next/dynamic';
+const ResponsiveContainer = dynamic(() => import('recharts').then(mod => mod.ResponsiveContainer), { ssr: false });
+const AreaChart = dynamic(() => import('recharts').then(mod => mod.AreaChart), { ssr: false });
+const XAxis = dynamic(() => import('recharts').then(mod => mod.XAxis), { ssr: false });
+const YAxis = dynamic(() => import('recharts').then(mod => mod.YAxis), { ssr: false });
+const Tooltip = dynamic(() => import('recharts').then(mod => mod.Tooltip), { ssr: false });
+const Area = dynamic(() => import('recharts').then(mod => mod.Area), { ssr: false });
 import { TimelineEvent } from '@/services/TimelineService';
 
 const formatCurrency = (value: number) => {
@@ -25,7 +31,8 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 export default function JourneyClient({ timelineData }: { timelineData: TimelineEvent[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start start", "end end"] });
-  
+  const [activeYear, setActiveYear] = useState<number>(2002);
+
   // Growth Counter Logic
   const counterValue = useTransform(scrollYProgress, [0.1, 0.4], [188000000, 4167000000]);
   const [displayValue, setDisplayValue] = useState("N$188 Million");
@@ -39,8 +46,52 @@ export default function JourneyClient({ timelineData }: { timelineData: Timeline
   // Scroll Progress for Timeline Line
   const timelineProgress = useTransform(scrollYProgress, [0.3, 0.8], ["0%", "100%"]);
 
+  useEffect(() => {
+    return scrollYProgress.on('change', (latest) => {
+      // Very basic logic to update active year based on scroll
+      const milestones = timelineData.filter(t => t.isMilestone).map(t => t.year);
+      if (milestones.length === 0) return;
+      
+      const index = Math.min(
+        Math.floor(latest * milestones.length),
+        milestones.length - 1
+      );
+      setActiveYear(milestones[index]);
+    });
+  }, [scrollYProgress, timelineData]);
+
+  const scrollToYear = (year: number) => {
+    const el = document.getElementById(`timeline-year-${year}`);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
-    <div ref={containerRef} style={{ backgroundColor: '#0F172A', color: 'var(--text-light)' }}>
+    <div ref={containerRef} style={{ backgroundColor: '#0F172A', color: 'var(--text-light)', position: 'relative' }}>
+      
+      {/* TIMELINE NAVIGATION (Floating) */}
+      <div style={{ position: 'fixed', right: '2rem', top: '50%', transform: 'translateY(-50%)', zIndex: 100, display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
+        {timelineData.filter(t => t.isMilestone).map(item => (
+          <div key={`nav-${item.year}`} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }} className="group">
+            <span style={{ fontSize: '0.75rem', color: activeYear === item.year ? 'var(--accent-gold)' : 'var(--text-muted)', opacity: activeYear === item.year ? 1 : 0, transition: 'opacity 0.3s' }} className="group-hover:opacity-100">
+              {item.year}
+            </span>
+            <button 
+              onClick={() => scrollToYear(item.year)}
+              style={{ 
+                width: '12px', 
+                height: '12px', 
+                borderRadius: '50%', 
+                backgroundColor: activeYear === item.year ? 'var(--accent-gold)' : 'rgba(255,255,255,0.2)', 
+                border: 'none', 
+                cursor: 'pointer',
+                transition: 'all 0.3s'
+              }} 
+            />
+          </div>
+        ))}
+      </div>
       
       {/* 1. HERO SECTION */}
       <section style={{ height: '100vh', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
@@ -98,6 +149,7 @@ export default function JourneyClient({ timelineData }: { timelineData: Timeline
             const isLeft = index % 2 === 0;
             return (
               <motion.div 
+                id={`timeline-year-${item.year}`}
                 key={item.year}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

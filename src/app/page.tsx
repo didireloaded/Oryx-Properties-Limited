@@ -32,21 +32,7 @@ export default function HomePage() {
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} style={{ maxWidth: '800px' }}>
             
-            {/* Live Stock Metric Widget */}
-            {sharePrice && (
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '1rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(15, 23, 42, 0.6)', backdropFilter: 'blur(12px)', border: '1px solid var(--border-glass)', borderRadius: '100px', marginBottom: '2rem' }}
-              >
-                <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px' }}>ORYX Share Price</div>
-                <div style={{ color: 'var(--text-light)', fontWeight: 600 }}>N$ {sharePrice.price.toFixed(2)}</div>
-                <div style={{ color: sharePrice.changePercent >= 0 ? '#10B981' : '#EF4444', fontSize: '0.875rem', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
-                  {sharePrice.changePercent >= 0 ? '▲' : '▼'} {Math.abs(sharePrice.changePercent).toFixed(1)}%
-                </div>
-              </motion.div>
-            )}
+
 
             <h1 style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontWeight: 300, lineHeight: 1.1 }}>
               Building Namibia's Future Through Strategic Investment.
@@ -66,9 +52,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. PORTFOLIO SNAPSHOT (10% Glass) */}
+      {/* 2. PORTFOLIO SNAPSHOT (Oryx At A Glance) */}
       <section style={{ marginTop: '-4rem', position: 'relative', zIndex: 20 }} className="container">
-        <div className="glass-panel-10" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', padding: '3rem', borderRadius: '4px' }}>
+        <div className="glass-panel-15" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', padding: '3rem', borderRadius: '4px' }}>
           <div>
             <div style={{ color: 'var(--accent-gold)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>Portfolio Value</div>
             <div style={{ fontSize: '2.5rem', color: 'var(--text-light)', fontWeight: 300 }}>N$ 3.4B</div>
@@ -88,8 +74,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. FEATURED ASSETS & MAP PREVIEW */}
+      {/* 3. PORTFOLIO ALLOCATION */}
       <section className="section">
+        <div className="container">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem' }}>
+            <div>
+              <h2 style={{ fontSize: '3rem', color: 'var(--text-light)', fontWeight: 300, marginBottom: '0.5rem' }}>Portfolio Allocation</h2>
+              <p style={{ color: 'var(--text-muted)' }}>Diversified across key sectors.</p>
+            </div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+            <div className="glass-panel-15" style={{ padding: '2rem', borderRadius: '4px', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div style={{ fontSize: '1.25rem', color: 'var(--text-light)', marginBottom: '0.5rem' }}>Retail</div>
+              <div style={{ fontSize: '2rem', color: 'var(--accent-gold)', fontWeight: 300 }}>64%</div>
+            </div>
+            <div className="glass-panel-15" style={{ padding: '2rem', borderRadius: '4px', borderLeft: '4px solid #10B981' }}>
+              <div style={{ fontSize: '1.25rem', color: 'var(--text-light)', marginBottom: '0.5rem' }}>Industrial</div>
+              <div style={{ fontSize: '2rem', color: '#10B981', fontWeight: 300 }}>24%</div>
+            </div>
+            <div className="glass-panel-15" style={{ padding: '2rem', borderRadius: '4px', borderLeft: '4px solid #3B82F6' }}>
+              <div style={{ fontSize: '1.25rem', color: 'var(--text-light)', marginBottom: '0.5rem' }}>Office</div>
+              <div style={{ fontSize: '2rem', color: '#3B82F6', fontWeight: 300 }}>12%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. FEATURED ASSETS & MAP PREVIEW */}
+      <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem' }}>
             <div>
@@ -123,7 +135,7 @@ export default function HomePage() {
                </div>
                
                {/* Map Preview Placeholder for Homepage */}
-               <div className="glass-panel-10" style={{ flex: 1, borderRadius: '4px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center' }}>
+               <div className="glass-panel-15" style={{ flex: 1, borderRadius: '4px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center' }}>
                   <div style={{ width: '48px', height: '48px', border: '1px solid var(--accent-gold)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
                     <div style={{ width: '8px', height: '8px', backgroundColor: 'var(--accent-gold)', borderRadius: '50%' }} />
                   </div>
@@ -132,6 +144,28 @@ export default function HomePage() {
                   <Link href="/portfolio" className="btn-primary" style={{ padding: '0.5rem 1.5rem', fontSize: '0.75rem' }}>Open Map</Link>
                </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. QUICK ACTION LINKS */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
+            <Link href="/investors" className="glass-panel-15 group" style={{ padding: '3rem', borderRadius: '4px', textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '200px' }}>
+              <div style={{ color: 'var(--accent-gold)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1rem' }}>For Investors</div>
+              <h3 style={{ color: 'var(--text-light)', fontSize: '2rem', fontWeight: 300, transition: 'color 0.3s' }} className="group-hover:text-accent-gold">Investor Centre</h3>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', marginTop: '2rem' }}>
+                Access financial reports and market data <ArrowRight size={20} color="var(--accent-gold)" style={{ marginLeft: 'auto' }} />
+              </div>
+            </Link>
+            <Link href="/leasing" className="glass-panel-15 group" style={{ padding: '3rem', borderRadius: '4px', textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '200px' }}>
+              <div style={{ color: 'var(--accent-gold)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1rem' }}>For Tenants</div>
+              <h3 style={{ color: 'var(--text-light)', fontSize: '2rem', fontWeight: 300, transition: 'color 0.3s' }} className="group-hover:text-accent-gold">Leasing Enquiries</h3>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', marginTop: '2rem' }}>
+                View available units and floor plans <ArrowRight size={20} color="var(--accent-gold)" style={{ marginLeft: 'auto' }} />
+              </div>
+            </Link>
           </div>
         </div>
       </section>

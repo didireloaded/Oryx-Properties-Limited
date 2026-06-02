@@ -14,13 +14,29 @@
     "description": "Maerua Mall is one of Namibia’s largest and most established shopping destinations, located in the capital city. Flagship asset with major tenants including Checkers, Woolworths, Food Lover's Market and Mr Price.",
     "image": "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=2126&auto=format&fit=crop",
     "tenants": [
-      { "name": "Checkers", "gla": "4,500m²" },
-      { "name": "Woolworths", "gla": "3,200m²" },
-      { "name": "Food Lover's Market", "gla": "2,800m²" },
-      { "name": "Mr Price", "gla": "2,500m²" }
+      {
+        "name": "Checkers",
+        "gla": "4,500m²"
+      },
+      {
+        "name": "Woolworths",
+        "gla": "3,200m²"
+      },
+      {
+        "name": "Food Lover's Market",
+        "gla": "2,800m²"
+      },
+      {
+        "name": "Mr Price",
+        "gla": "2,500m²"
+      }
     ],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.5852,
+      "lng": 17.0903
+    }
   },
   {
     "id": "ret-2",
@@ -38,7 +54,11 @@
     "image": "https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=2077&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.9515,
+      "lng": 14.5298
+    }
   },
   {
     "id": "ret-3",
@@ -56,7 +76,11 @@
     "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.5694,
+      "lng": 17.0858
+    }
   },
   {
     "id": "ret-4",
@@ -74,7 +98,11 @@
     "image": "https://images.unsplash.com/photo-1601598851547-4302969d0614?q=80&w=2064&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.4578,
+      "lng": 17.0863
+    }
   },
   {
     "id": "ret-5",
@@ -92,7 +120,11 @@
     "image": "https://images.unsplash.com/photo-1556740714-a8395b3bf30f?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.5894,
+      "lng": 17.07
+    }
   },
   {
     "id": "off-1",
@@ -110,7 +142,11 @@
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.5649,
+      "lng": 17.082
+    }
   },
   {
     "id": "off-2",
@@ -128,7 +164,11 @@
     "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": true
+    "isLeasing": true,
+    "coordinates": {
+      "lat": -22.5852,
+      "lng": 17.0903
+    }
   },
   {
     "id": "off-3",
@@ -146,7 +186,11 @@
     "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": true
+    "isLeasing": true,
+    "coordinates": {
+      "lat": -22.5684,
+      "lng": 17.0848
+    }
   },
   {
     "id": "off-4",
@@ -164,7 +208,11 @@
     "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": true
+    "isLeasing": true,
+    "coordinates": {
+      "lat": -22.567,
+      "lng": 17.082
+    }
   },
   {
     "id": "res-1",
@@ -182,7 +230,11 @@
     "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.57,
+      "lng": 17.08
+    }
   },
   {
     "id": "res-2",
@@ -200,7 +252,11 @@
     "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.572,
+      "lng": 17.08
+    }
   },
   {
     "id": "res-3",
@@ -218,7 +274,11 @@
     "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.574,
+      "lng": 17.08
+    }
   },
   {
     "id": "ind-1",
@@ -236,7 +296,11 @@
     "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.61,
+      "lng": 17.08
+    }
   },
   {
     "id": "ind-2",
@@ -254,7 +318,11 @@
     "image": "https://images.unsplash.com/photo-1565515266858-a5b6ce6416bf?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.588,
+      "lng": 17.08
+    }
   },
   {
     "id": "ind-3",
@@ -272,7 +340,11 @@
     "image": "https://images.unsplash.com/photo-1580276856526-bb21e7845353?q=80&w=2060&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -22.957,
+      "lng": 14.5
+    }
   },
   {
     "id": "ind-4",
@@ -290,7 +362,11 @@
     "image": "https://images.unsplash.com/photo-1558442074-3c19857bc1dc?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -26.58,
+      "lng": 18.13
+    }
   },
   {
     "id": "ind-5",
@@ -308,7 +384,11 @@
     "image": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [],
-    "isLeasing": false
+    "isLeasing": false,
+    "coordinates": {
+      "lat": -26.15,
+      "lng": 27.92
+    }
   },
   {
     "id": "lease-1",
@@ -326,9 +406,17 @@
     "image": "https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=2077&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [
-      { "unit": "Shop 45", "size": "150m²", "date": "Immediate" }
+      {
+        "unit": "Shop 45",
+        "size": "150m²",
+        "date": "Immediate"
+      }
     ],
-    "isLeasing": true
+    "isLeasing": true,
+    "coordinates": {
+      "lat": -22.9515,
+      "lng": 14.5298
+    }
   },
   {
     "id": "lease-2",
@@ -346,9 +434,17 @@
     "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [
-      { "unit": "Suite 3A", "size": "220m²", "date": "Immediate" }
+      {
+        "unit": "Suite 3A",
+        "size": "220m²",
+        "date": "Immediate"
+      }
     ],
-    "isLeasing": true
+    "isLeasing": true,
+    "coordinates": {
+      "lat": -22.5694,
+      "lng": 17.0858
+    }
   },
   {
     "id": "lease-3",
@@ -366,8 +462,16 @@
     "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
     "tenants": [],
     "availableSpaces": [
-      { "unit": "Unit B", "size": "1,200m²", "date": "Immediate" }
+      {
+        "unit": "Unit B",
+        "size": "1,200m²",
+        "date": "Immediate"
+      }
     ],
-    "isLeasing": true
+    "isLeasing": true,
+    "coordinates": {
+      "lat": -22.588,
+      "lng": 17.08
+    }
   }
 ]

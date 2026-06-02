@@ -86,7 +86,7 @@ export default function ContactPage() {
               >
             
             {/* 1. Investor Relations */}
-            <div onClick={() => handleSelectType('Investor Relations')} className="glass-panel group" style={{ padding: '2rem', borderRadius: '4px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div onClick={() => handleSelectType('Investor Relations')} className="glass-panel-20 group" style={{ padding: '2rem', borderRadius: '4px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
                 <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Briefcase size={24} color="var(--accent-gold)" />
@@ -100,7 +100,7 @@ export default function ContactPage() {
             </div>
 
             {/* 2. Leasing Enquiries */}
-            <div onClick={() => handleSelectType('Leasing Department')} className="glass-panel group" style={{ padding: '2rem', borderRadius: '4px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div onClick={() => handleSelectType('Leasing Department')} className="glass-panel-20 group" style={{ padding: '2rem', borderRadius: '4px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
                 <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Building size={24} color="var(--accent-gold)" />
@@ -114,7 +114,7 @@ export default function ContactPage() {
             </div>
 
             {/* 3. General Corporate */}
-            <div onClick={() => handleSelectType('General Corporate')} className="glass-panel group" style={{ padding: '2rem', borderRadius: '4px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div onClick={() => handleSelectType('General Corporate')} className="glass-panel-20 group" style={{ padding: '2rem', borderRadius: '4px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
                 <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <UserPlus size={24} color="var(--accent-gold)" />

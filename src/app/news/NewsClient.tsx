@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Clock } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { NewsArticle } from '@/services/NewsService';
 
@@ -41,8 +42,8 @@ export default function NewsClient({ newsData }: { newsData: NewsArticle[] }) {
                 <>
                   {/* Lead Story */}
                   <Link href={`/news/${corporateNews[0].id}`} style={{ display: 'block', textDecoration: 'none', marginBottom: '4rem', cursor: 'pointer' }} className="group">
-                    <div style={{ width: '100%', height: '450px', marginBottom: '2rem', overflow: 'hidden' }}>
-                      <img src={corporateNews[0].image} alt={corporateNews[0].title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }} className="group-hover:scale-105" />
+                    <div style={{ position: 'relative', width: '100%', height: '450px', marginBottom: '2rem', overflow: 'hidden' }}>
+                      <Image src={corporateNews[0].image} alt={corporateNews[0].title} fill style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }} className="group-hover:scale-105" priority />
                     </div>
                     <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1rem' }}>
                       <span style={{ color: 'var(--accent-gold)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>{corporateNews[0].category}</span>
@@ -70,7 +71,7 @@ export default function NewsClient({ newsData }: { newsData: NewsArticle[] }) {
             </div>
 
             {/* RIGHT COLUMN: Market Feed (SENS/NENS) */}
-            <div style={{ borderLeft: '1px solid var(--border-subtle)', paddingLeft: '4rem' }}>
+            <div className="glass-panel-05" style={{ padding: '2.5rem', borderRadius: '12px' }}>
               <div style={{ borderBottom: '2px solid var(--text-light)', paddingBottom: '1rem', marginBottom: '3rem' }}>
                 <h2 style={{ fontSize: '1.5rem', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 600 }}>Market Announcements</h2>
               </div>

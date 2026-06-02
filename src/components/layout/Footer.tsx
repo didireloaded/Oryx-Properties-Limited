@@ -10,13 +10,13 @@ export const Footer: React.FC = () => {
         
         <div className={styles.brandColumn}>
           <Image src="/images/brand/oryx-logo.png" alt="Oryx Properties Limited" width={150} height={48} style={{ height: '48px', width: 'auto', filter: 'brightness(0) invert(1)', marginBottom: '1.5rem' }} />
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>Namibia&apos;s Leading Listed Property Fund</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>Oryx Properties Limited</p>
         </div>
 
         <div className={styles.linkGroup}>
-          <Link href="/about" style={{ display: 'block', color: 'var(--text-light)', textDecoration: 'none', marginBottom: '1rem', fontSize: '0.875rem' }}>Company</Link>
           <Link href="/portfolio" style={{ display: 'block', color: 'var(--text-light)', textDecoration: 'none', marginBottom: '1rem', fontSize: '0.875rem' }}>Portfolio</Link>
-          <Link href="/investors" style={{ display: 'block', color: 'var(--text-light)', textDecoration: 'none', marginBottom: '1rem', fontSize: '0.875rem' }}>Investor Relations</Link>
+          <Link href="/investors" style={{ display: 'block', color: 'var(--text-light)', textDecoration: 'none', marginBottom: '1rem', fontSize: '0.875rem' }}>Investor Centre</Link>
+          <Link href="/investors#governance" style={{ display: 'block', color: 'var(--text-light)', textDecoration: 'none', marginBottom: '1rem', fontSize: '0.875rem' }}>Governance</Link>
         </div>
 
         <div className={styles.linkGroup}>
@@ -26,7 +26,6 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className={styles.linkGroup}>
-          <Link href="/investors#governance" style={{ display: 'block', color: 'var(--text-light)', textDecoration: 'none', marginBottom: '1rem', fontSize: '0.875rem' }}>Governance</Link>
           <Link href="/investors#reports" style={{ display: 'block', color: 'var(--text-light)', textDecoration: 'none', marginBottom: '1rem', fontSize: '0.875rem' }}>Annual Reports</Link>
         </div>
         

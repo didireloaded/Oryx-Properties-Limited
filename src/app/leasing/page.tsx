@@ -58,7 +58,9 @@ export default function LeasingPage() {
               >
                 <div className="glass-panel-15 group" style={{ borderRadius: '4px', overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}>
                   <div style={{ height: '200px', overflow: 'hidden', position: 'relative' }}>
-                    <img src={prop.image} alt={prop.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} className="group-hover:scale-105" />
+                  <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                    <Image src={prop.image} alt={prop.name} fill style={{ objectFit: 'cover', transition: 'transform 0.5s' }} className="group-hover:scale-105" />
+                  </div>
                     <div style={{ position: 'absolute', top: '1rem', right: '1rem', backgroundColor: 'var(--accent-brand)', color: 'white', padding: '0.25rem 0.75rem', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 600 }}>
                       AVAILABLE
                     </div>

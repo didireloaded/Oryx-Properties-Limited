@@ -47,7 +47,7 @@ export function DocumentCard({ document, index }: DocumentCardProps) {
               </span>
             </div>
             
-            <div className="w-10 h-10 rounded-full glass-panel-15 flex items-center justify-center text-white/50 group-hover:text-[#B78A2D] group-hover:bg-[#B78A2D]/10 transition-colors duration-300">
+            <div className="w-10 h-10 rounded-full glass-panel-35 flex items-center justify-center text-white/50 group-hover:text-[#B78A2D] group-hover:bg-[#B78A2D]/10 transition-colors duration-300">
               <FileText className="w-5 h-5" />
             </div>
           </div>
@@ -70,7 +70,7 @@ export function DocumentCard({ document, index }: DocumentCardProps) {
           <div className="flex gap-2 mt-auto">
             <button 
               onClick={() => setIsViewerOpen(true)}
-              className="flex-1 py-2.5 glass-panel-15 hover:bg-white/10 text-white text-xs font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 border border-white/5 hover:border-white/20"
+              className="flex-1 py-2.5 glass-panel-35 hover:bg-white/10 text-white text-xs font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 border border-white/5 hover:border-white/20"
             >
               <Eye className="w-4 h-4" /> View Online
             </button>
@@ -79,7 +79,7 @@ export function DocumentCard({ document, index }: DocumentCardProps) {
               download
               target="_blank"
               rel="noreferrer"
-              className="w-10 h-10 flex-shrink-0 glass-panel-15 hover:bg-[#B78A2D]/20 hover:border-[#B78A2D]/30 text-white hover:text-[#B78A2D] rounded-xl transition-all duration-300 flex items-center justify-center border border-white/5"
+              className="w-10 h-10 flex-shrink-0 glass-panel-35 hover:bg-[#B78A2D]/20 hover:border-[#B78A2D]/30 text-white hover:text-[#B78A2D] rounded-xl transition-all duration-300 flex items-center justify-center border border-white/5"
             >
               <Download className="w-4 h-4" />
             </a>

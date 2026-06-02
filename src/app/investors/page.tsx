@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
-import { Download, Eye, FileText, Search, Filter, TrendingUp, BarChart3, PieChart, Calendar, Mail, Phone, MapPin, ChevronDown, ArrowRight } from 'lucide-react';
+import { Download, Eye, FileText, Search, Filter, TrendingUp, BarChart3, PieChart, Calendar, Mail, Phone, MapPin, ChevronDown, ArrowRight, ArrowDown } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, LineChart, Line } from 'recharts';
 import { DocumentLibrary } from '@/components/investors/DocumentLibrary';
 import { AnnualReportsTimeline } from '@/components/investors/AnnualReportsTimeline';
@@ -123,6 +123,65 @@ export default function InvestorCentre() {
           </div>
         </section>
 
+        {/* JOURNEY CONNECTOR */}
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '-2rem 0', position: 'relative', zIndex: 20 }}>
+          <div className="glass-panel-35" style={{ width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--accent-gold)' }}>
+            <ArrowDown size={24} color="var(--accent-gold)" />
+          </div>
+        </div>
+
+        {/* ORYX ON THE NSX */}
+        <section style={{ padding: '6rem 0' }}>
+          <div className="container">
+            <h2 style={{ fontSize: '2.5rem', fontWeight: 300, color: 'var(--text-light)', marginBottom: '3rem', textAlign: 'center' }}>Oryx On The NSX</h2>
+            <div className="glass-panel-35" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3rem', padding: '4rem', borderRadius: '12px' }}>
+              <div style={{ textAlign: 'center', gridColumn: 'span 2' }}>
+                <div style={{ color: 'var(--accent-gold)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Share Price</div>
+                <div style={{ fontSize: '3.5rem', color: 'var(--text-light)', fontWeight: 300 }}>
+                  {marketData ? `N$ ${marketData.metrics.currentPrice.toFixed(2)}` : 'N$ --'}
+                </div>
+              </div>
+              <div style={{ textAlign: 'center', gridColumn: 'span 2' }}>
+                <div style={{ color: 'var(--accent-gold)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Market Capitalisation</div>
+                <div style={{ fontSize: '3.5rem', color: 'var(--text-light)', fontWeight: 300 }}>
+                  {marketData ? `N$ ${marketData.metrics.marketCap.toFixed(2)}B` : 'N$ --'}
+                </div>
+              </div>
+              
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Latest Distribution</div>
+                <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}>108 cpu</div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>NAV</div>
+                <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}>N$ 2.58B</div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>52 Week High/Low</div>
+                <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}>
+                  {marketData ? `${marketData.metrics.week52High.toFixed(2)} / ${marketData.metrics.week52Low.toFixed(2)}` : '-- / --'}
+                </div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Volume</div>
+                <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}>
+                  {marketData ? marketData.metrics.volume.toLocaleString() : '--'}
+                </div>
+              </div>
+            </div>
+            <div style={{ textAlign: 'center', marginTop: '1.5rem', fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              Data Source: MarketScreener
+            </div>
+          </div>
+        </section>
+
+        {/* JOURNEY CONNECTOR */}
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '-2rem 0', position: 'relative', zIndex: 20 }}>
+          <div className="glass-panel-35" style={{ width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--accent-gold)' }}>
+            <ArrowDown size={24} color="var(--accent-gold)" />
+          </div>
+        </div>
+
         {/* 2025 PERFORMANCE DASHBOARD (BENTO GRID) */}
         <section style={{ paddingBottom: '6rem' }}>
           <div className="container">
@@ -139,7 +198,7 @@ export default function InvestorCentre() {
               <motion.div 
                 layoutId="metric-portfolio"
                 onClick={() => setActiveMetric(activeMetric === 'portfolio' ? null : 'portfolio')}
-                className={`glass-card-premium bento-item group ${activeMetric === 'portfolio' ? 'bento-col-span-2 bento-row-span-2' : 'bento-col-span-2'}`}
+                className={`glass-panel-35 bento-item group ${activeMetric === 'portfolio' ? 'bento-col-span-2 bento-row-span-2' : 'bento-col-span-2'}`}
                 style={{ padding: '2rem', cursor: 'pointer', position: 'relative' }}
               >
                 <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -181,7 +240,7 @@ export default function InvestorCentre() {
               </motion.div>
 
               {/* Share Price (Live) */}
-              <motion.div className="glass-card-premium bento-item group" style={{ padding: '2rem', display: 'flex', flexDirection: 'column' }}>
+              <motion.div className="glass-panel-35 bento-item group" style={{ padding: '2rem', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '1rem', display: 'flex', justifyContent: 'space-between' }}>
                   <span>Share Price (NSX:ORY)</span>
                   <span style={{ fontSize: '0.65rem', padding: '2px 6px', backgroundColor: 'rgba(16, 185, 129, 0.2)', color: '#10B981', borderRadius: '4px' }}>LIVE</span>
@@ -206,7 +265,7 @@ export default function InvestorCentre() {
               </motion.div>
 
               {/* Market Cap */}
-              <motion.div className="glass-card-premium bento-item" style={{ padding: '2rem' }}>
+              <motion.div className="glass-panel-35 bento-item" style={{ padding: '2rem' }}>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '1rem' }}>Market Capitalisation</div>
                 <div style={{ fontSize: '2.5rem', color: 'var(--text-light)', fontWeight: 300, lineHeight: 1 }}>
                   {marketData ? (
@@ -218,15 +277,20 @@ export default function InvestorCentre() {
               </motion.div>
 
               {/* NAV */}
-              <motion.div className="glass-card-premium bento-item" style={{ padding: '2rem' }}>
+              <motion.div className="glass-panel-35 bento-item" style={{ padding: '2rem' }}>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '1rem' }}>Net Asset Value</div>
                 <div style={{ fontSize: '2.5rem', color: 'var(--text-light)', fontWeight: 300, lineHeight: 1 }}>
                   <CountUp prefix="N$" to={2.584} decimals={3} />B
                 </div>
               </motion.div>
 
-              {/* Distribution */}
-              <motion.div className="glass-card-premium bento-item bento-col-span-2" style={{ padding: '2rem' }}>
+              {/* Distribution - Expands */}
+              <motion.div 
+                layoutId="metric-distribution"
+                onClick={() => setActiveMetric(activeMetric === 'distribution' ? null : 'distribution')}
+                className={`glass-panel-35 bento-item group ${activeMetric === 'distribution' ? 'bento-col-span-4' : 'bento-col-span-2'}`}
+                style={{ padding: '2rem', cursor: 'pointer', position: 'relative' }}
+              >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div>
                     <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '1rem' }}>Total Distribution</div>
@@ -236,37 +300,125 @@ export default function InvestorCentre() {
                   </div>
                   <TrendingUp size={48} strokeWidth={1} color="var(--accent-gold)" style={{ opacity: 0.5 }} />
                 </div>
+                
+                <AnimatePresence>
+                  {activeMetric === 'distribution' && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }} 
+                      animate={{ opacity: 1, height: 'auto' }} 
+                      exit={{ opacity: 0, height: 0 }}
+                      style={{ marginTop: '2rem', borderTop: '1px solid var(--border-glass)', paddingTop: '2rem', overflow: 'hidden' }}
+                    >
+                      <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1.5rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Historical Dividend Timeline</div>
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem' }}>
+                        {dividendData.map((d) => (
+                          <div key={d.year} style={{ padding: '1rem', backgroundColor: 'rgba(255,255,255,0.02)', borderRadius: '8px', border: '1px solid var(--border-glass)' }}>
+                            <div style={{ color: 'var(--text-light)', fontWeight: 600, marginBottom: '0.5rem' }}>{d.year}</div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                              <span>Interim</span><span>{d.interim.toFixed(2)}c</span>
+                            </div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                              <span>Final</span><span>{d.final.toFixed(2)}c</span>
+                            </div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem', color: 'var(--accent-gold)', marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                              <span>Total</span><span>{d.total.toFixed(2)}c</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
 
               {/* Small Metrics */}
-              <motion.div className="glass-card-premium bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <motion.div className="glass-panel-35 bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Net Rental Growth</div>
                 <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}><CountUp to={10} decimals={1} suffix="%" /></div>
               </motion.div>
 
-              <motion.div className="glass-card-premium bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <motion.div className="glass-panel-35 bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Gearing Ratio</div>
                 <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}><CountUp to={40.8} decimals={1} suffix="%" /></div>
               </motion.div>
 
-              <motion.div className="glass-card-premium bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <motion.div className="glass-panel-35 bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Funding Cost</div>
                 <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}><CountUp to={9.5} decimals={1} suffix="%" /></div>
               </motion.div>
 
-              <motion.div className="glass-card-premium bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <motion.div className="glass-panel-35 bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Interest Cover Ratio</div>
                 <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}><CountUp to={2.1} decimals={1} suffix="x" /></div>
               </motion.div>
 
-              <motion.div className="glass-card-premium bento-item" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <motion.div 
+                layoutId="metric-vacancy"
+                onClick={() => setActiveMetric(activeMetric === 'vacancy' ? null : 'vacancy')}
+                className={`glass-panel-35 bento-item group ${activeMetric === 'vacancy' ? 'bento-col-span-3 bento-row-span-2' : ''}`} 
+                style={{ padding: '2rem', display: 'flex', flexDirection: 'column', cursor: 'pointer', position: 'relative' }}
+              >
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Vacancy Rate</div>
                 <div style={{ fontSize: '2rem', color: 'var(--text-light)', fontWeight: 300 }}><CountUp to={2.4} decimals={1} suffix="%" /></div>
+                
+                <AnimatePresence>
+                  {activeMetric === 'vacancy' && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }} 
+                      animate={{ opacity: 1, height: 'auto' }} 
+                      exit={{ opacity: 0, height: 0 }}
+                      style={{ marginTop: '2rem', borderTop: '1px solid var(--border-glass)', paddingTop: '2rem', overflow: 'hidden' }}
+                    >
+                      <div style={{ display: 'flex', gap: '2rem' }}>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Occupancy by Sector</div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                            <div>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem', marginBottom: '0.25rem' }}>
+                                <span style={{ color: 'var(--text-light)' }}>Retail</span><span style={{ color: 'var(--accent-gold)' }}>98.2%</span>
+                              </div>
+                              <div style={{ width: '100%', height: '4px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '2px' }}><div style={{ width: '98.2%', height: '100%', backgroundColor: 'var(--accent-gold)', borderRadius: '2px' }} /></div>
+                            </div>
+                            <div>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem', marginBottom: '0.25rem' }}>
+                                <span style={{ color: 'var(--text-light)' }}>Industrial</span><span style={{ color: '#10B981' }}>99.1%</span>
+                              </div>
+                              <div style={{ width: '100%', height: '4px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '2px' }}><div style={{ width: '99.1%', height: '100%', backgroundColor: '#10B981', borderRadius: '2px' }} /></div>
+                            </div>
+                            <div>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem', marginBottom: '0.25rem' }}>
+                                <span style={{ color: 'var(--text-light)' }}>Office</span><span style={{ color: '#3B82F6' }}>89.5%</span>
+                              </div>
+                              <div style={{ width: '100%', height: '4px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '2px' }}><div style={{ width: '89.5%', height: '100%', backgroundColor: '#3B82F6', borderRadius: '2px' }} /></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Vacancy Trend</div>
+                          <div style={{ height: '120px' }}>
+                             <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
+                                <LineChart data={performanceData}>
+                                  <Line type="step" dataKey="occupancy" stroke="var(--text-light)" strokeWidth={2} dot={false} />
+                                </LineChart>
+                             </ResponsiveContainer>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
 
             </div>
           </div>
         </section>
+
+        {/* JOURNEY CONNECTOR */}
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '-2rem 0', position: 'relative', zIndex: 20 }}>
+          <div className="glass-panel-35" style={{ width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--accent-gold)' }}>
+            <ArrowDown size={24} color="var(--accent-gold)" />
+          </div>
+        </div>
 
         {/* INTERACTIVE SHARE PERFORMANCE */}
         <section style={{ padding: '6rem 0', borderTop: '1px solid var(--border-glass)', backgroundColor: 'rgba(0,0,0,0.2)' }}>
@@ -301,7 +453,7 @@ export default function InvestorCentre() {
               </div>
             </div>
 
-            <div className="glass-card-premium" style={{ height: '450px', padding: '2.5rem' }}>
+            <div className="glass-panel-35" style={{ height: '450px', padding: '2.5rem', borderRadius: '12px' }}>
               {marketData ? (
                 <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
                   <AreaChart data={marketData.historical ? marketData.historical[chartPeriod] : mockHistoricalData[chartPeriod as keyof typeof mockHistoricalData]}>
@@ -332,6 +484,13 @@ export default function InvestorCentre() {
           </div>
         </section>
 
+        {/* JOURNEY CONNECTOR */}
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '-2rem 0', position: 'relative', zIndex: 20 }}>
+          <div className="glass-panel-35" style={{ width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--accent-gold)' }}>
+            <ArrowDown size={24} color="var(--accent-gold)" />
+          </div>
+        </div>
+
         {/* PORTFOLIO PERFORMANCE CHARTS */}
         <section style={{ padding: '6rem 0', borderTop: '1px solid var(--border-glass)' }}>
           <div className="container">
@@ -340,7 +499,7 @@ export default function InvestorCentre() {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
               
               {/* Chart 1 */}
-              <div className="glass-card-premium" style={{ padding: '2.5rem' }}>
+              <div className="glass-panel-35" style={{ padding: '2.5rem', borderRadius: '12px' }}>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-light)', marginBottom: '2rem' }}>Portfolio Value Growth (N$ Bn)</h3>
                 <div style={{ height: '300px' }}>
                   <ResponsiveContainer width="100%" height="100%">
@@ -362,7 +521,7 @@ export default function InvestorCentre() {
               </div>
 
               {/* Chart 2 */}
-              <div className="glass-card-premium" style={{ padding: '2.5rem' }}>
+              <div className="glass-panel-35" style={{ padding: '2.5rem', borderRadius: '12px' }}>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-light)', marginBottom: '2rem' }}>Occupancy Trend (%)</h3>
                 <div style={{ height: '300px' }}>
                   <ResponsiveContainer width="100%" height="100%">
@@ -381,12 +540,19 @@ export default function InvestorCentre() {
           </div>
         </section>
 
+        {/* JOURNEY CONNECTOR */}
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '-2rem 0', position: 'relative', zIndex: 20 }}>
+          <div className="glass-panel-35" style={{ width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--accent-gold)' }}>
+            <ArrowDown size={24} color="var(--accent-gold)" />
+          </div>
+        </div>
+
         {/* DIVIDEND CENTRE */}
         <section style={{ padding: '6rem 0', backgroundColor: 'rgba(0,0,0,0.2)', borderTop: '1px solid var(--border-glass)' }}>
           <div className="container">
             <h2 style={{ fontSize: '2.5rem', fontWeight: 300, color: 'var(--text-light)', marginBottom: '3rem' }}>Dividend Centre</h2>
             
-            <div className="glass-card-premium" style={{ padding: '3rem', overflowX: 'auto' }}>
+            <div className="glass-panel-35" style={{ padding: '3rem', overflowX: 'auto', borderRadius: '12px' }}>
               <table style={{ width: '100%', minWidth: '600px', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ borderBottom: '1px solid var(--border-glass)', textAlign: 'left' }}>
@@ -412,6 +578,13 @@ export default function InvestorCentre() {
             </div>
           </div>
         </section>
+
+        {/* JOURNEY CONNECTOR */}
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '-2rem 0', position: 'relative', zIndex: 20 }}>
+          <div className="glass-panel-35" style={{ width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--accent-gold)' }}>
+            <ArrowDown size={24} color="var(--accent-gold)" />
+          </div>
+        </div>
 
         {/* ANNUAL REPORTS TIMELINE */}
         <AnnualReportsTimeline />
@@ -462,7 +635,7 @@ export default function InvestorCentre() {
               <div>
                 <h2 style={{ fontSize: '2rem', fontWeight: 300, color: 'var(--text-light)', marginBottom: '3rem' }}>Investor Relations</h2>
                 
-                <div className="glass-card-premium" style={{ padding: '3rem' }}>
+                <div className="glass-panel-35" style={{ padding: '3rem', borderRadius: '12px' }}>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-light)', marginBottom: '1.5rem' }}>Get in Touch</h3>
                   <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem', lineHeight: 1.6 }}>
                     For any investor-related enquiries, please contact our dedicated Investor Relations team. We are committed to transparent and timely communication with our shareholders.

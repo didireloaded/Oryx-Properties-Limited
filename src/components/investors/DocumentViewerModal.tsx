@@ -57,7 +57,7 @@ export function DocumentViewerModal({ document, onClose }: DocumentViewerModalPr
           <h3 className="text-white font-medium truncate pr-4">{document.title}</h3>
           <button 
             onClick={onClose}
-            className="w-8 h-8 rounded-full glass-panel-15 flex items-center justify-center text-white/70 hover:text-white"
+            className="w-8 h-8 rounded-full glass-panel-35 flex items-center justify-center text-white/70 hover:text-white"
           >
             <X className="w-5 h-5" />
           </button>
@@ -82,12 +82,12 @@ export function DocumentViewerModal({ document, onClose }: DocumentViewerModalPr
         {/* Info Panel */}
         <div className="w-full md:w-80 lg:w-96 flex flex-col border-l border-white/10 bg-[#0F172A]/40 backdrop-blur-3xl p-6 h-full overflow-y-auto hidden md:flex">
           <div className="flex justify-between items-start mb-8">
-            <div className="p-3 glass-panel-15 rounded-xl border border-white/5">
+            <div className="p-3 glass-panel-35 rounded-xl border border-white/5">
               <FileText className="w-6 h-6 text-[#B78A2D]" />
             </div>
             <button 
               onClick={onClose}
-              className="w-10 h-10 rounded-full glass-panel-15 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-all border border-white/5"
+              className="w-10 h-10 rounded-full glass-panel-35 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-all border border-white/5"
             >
               <X className="w-5 h-5" />
             </button>
@@ -136,7 +136,7 @@ export function DocumentViewerModal({ document, onClose }: DocumentViewerModalPr
             </a>
             <button 
               onClick={handleShare}
-              className="w-full py-4 glass-panel-15 hover:bg-white/10 text-white font-medium rounded-xl flex items-center justify-center gap-2 border border-white/5 transition-all duration-300"
+              className="w-full py-4 glass-panel-35 hover:bg-white/10 text-white font-medium rounded-xl flex items-center justify-center gap-2 border border-white/5 transition-all duration-300"
             >
               {isCopied ? <CheckCircle2 className="w-5 h-5 text-green-400" /> : <Share2 className="w-5 h-5" />}
               {isCopied ? 'Link Copied!' : 'Share Document'}

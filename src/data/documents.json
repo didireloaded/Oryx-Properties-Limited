@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Integrated Annual Report 2024",
+    "category": "Annual Reports",
+    "year": 2024,
+    "url": "/documents/reports/Oryx_IAR_2024.pdf",
+    "size": "5.2 MB",
+    "date": "2024-09-30"
+  },
+  {
+    "id": 2,
+    "title": "Audited Financial Results 2024",
+    "category": "Results",
+    "year": 2024,
+    "url": "/documents/results/Oryx_Results_2024.pdf",
+    "size": "2.1 MB",
+    "date": "2024-09-15"
+  },
+  {
+    "id": 3,
+    "title": "Declaration of Final Dividend",
+    "category": "NENS",
+    "year": 2024,
+    "url": "/documents/nens/Dividend_Declaration_2024.pdf",
+    "size": "150 KB",
+    "date": "2024-08-28"
+  },
+  {
+    "id": 4,
+    "title": "King IV Corporate Governance Report",
+    "category": "Governance",
+    "year": 2024,
+    "url": "/documents/governance/Oryx_King_IV_2024.pdf",
+    "size": "1.8 MB",
+    "date": "2024-10-12"
+  },
+  {
+    "id": 5,
+    "title": "Code of Ethics and Conduct",
+    "category": "Policies",
+    "year": 2023,
+    "url": "/documents/policies/Code_of_Ethics.pdf",
+    "size": "800 KB",
+    "date": "2023-05-10"
+  },
+  {
+    "id": 6,
+    "title": "Interim Results Presentation H1 2024",
+    "category": "Presentations",
+    "year": 2024,
+    "url": "/documents/presentations/Oryx_Interim_Pres_2024.pdf",
+    "size": "3.5 MB",
+    "date": "2024-03-10"
+  },
+  {
+    "id": 7,
+    "title": "Integrated Annual Report 2023",
+    "category": "Annual Reports",
+    "year": 2023,
+    "url": "/documents/reports/Oryx_IAR_2023.pdf",
+    "size": "4.8 MB",
+    "date": "2023-09-30"
+  }
+]

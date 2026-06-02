@@ -2,7 +2,9 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Map, { Marker, Popup } from 'react-map-gl/mapbox';
+import dynamic from 'next/dynamic';
+const Map = dynamic(() => import('react-map-gl/mapbox'), { ssr: false, loading: () => <div style={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--bg-secondary)' }}><Loader2 size={32} color="var(--accent-gold)" className="animate-spin" /></div> });
+import { Marker, Popup } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -15,6 +17,7 @@ interface Property {
   type: string;
   image: string;
   description?: string;
+  coordinates?: { lat: number, lng: number };
 }
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -26,23 +29,7 @@ const ASSET_CLASSES = [
   { id: 'Residential', name: 'Residential', icon: Home, description: 'Sought-after residential estates and complexes.', color: '#b78a2d' }
 ];
 
-// Rough coordinates mapping for Windhoek and others (for demo purposes)
-const COORDS_MAP: Record<string, {lat: number, lng: number}> = {
-  'ret-1': { lat: -22.5833, lng: 17.0833 },
-  'ret-2': { lat: -22.9575, lng: 14.5053 },
-  'ret-3': { lat: -22.5609, lng: 17.0836 },
-  'ret-4': { lat: -22.4833, lng: 17.0833 },
-  'ret-5': { lat: -22.5700, lng: 17.0800 },
-  'off-1': { lat: -22.5650, lng: 17.0850 },
-  'res-1': { lat: -22.5900, lng: 17.0900 },
-  'res-2': { lat: -22.5950, lng: 17.0950 },
-  'res-3': { lat: -22.6000, lng: 17.1000 },
-  'ind-1': { lat: -22.6100, lng: 17.0800 },
-  'ind-2': { lat: -22.5800, lng: 17.0700 },
-  'ind-3': { lat: -22.9500, lng: 14.5000 },
-  'ind-4': { lat: -26.5833, lng: 18.1333 },
-  'ind-5': { lat: -26.1500, lng: 27.9000 },
-};
+
 
 export default function PortfolioPage() {
   const [selectedClass, setSelectedClass] = useState<string | null>(null);
@@ -150,7 +137,7 @@ export default function PortfolioPage() {
                         <div 
                           key={cls.id}
                           onClick={() => setSelectedClass(cls.id)}
-                          className="glass-panel-15 group cursor-pointer" 
+                          className="glass-panel-20 group cursor-pointer" 
                           style={{ padding: '1rem', borderRadius: '8px', borderLeft: '4px solid ' + cls.color, transition: 'all 0.3s' }}
                         >
                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -201,10 +188,10 @@ export default function PortfolioPage() {
                           key={prop.id} 
                           onClick={() => {
                             setSelectedPropertyId(prop.id);
-                            const coords = COORDS_MAP[prop.id] || { lat: -22.5609, lng: 17.0836 };
+                            const coords = prop.coordinates || { lat: -22.5609, lng: 17.0836 };
                             setViewState(prev => ({ ...prev, longitude: coords.lng, latitude: coords.lat, zoom: 12 }));
                           }}
-                          className={`glass-panel-15 group cursor-pointer ${isSelected ? 'border-accent-brand' : ''}`} 
+                          className={`glass-panel-20 group cursor-pointer ${isSelected ? 'border-accent-brand' : ''}`} 
                           style={{ borderRadius: '8px', overflow: 'hidden', transition: 'all 0.3s', border: isSelected ? '1px solid var(--accent-gold)' : '1px solid var(--border-glass)' }}
                         >
                           <div style={{ display: 'flex', height: '100px' }}>
@@ -229,6 +216,17 @@ export default function PortfolioPage() {
         </div>
 
         {/* Right: Mapbox Implementation */}
+        <div className="w-full lg:w-2/3 relative h-[600px] lg:h-auto">
+          <Map
+            {...viewState}
+            onMove={evt => setViewState(evt.viewState)}
+            mapStyle="mapbox://styles/mapbox/dark-v11"
+            mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
+          >
+            {properties.map(prop => {
+              const coords = prop.coordinates || { lat: -22.5609, lng: 17.0836 };
+              const assetClass = ASSET_CLASSES.find(c => c.name === prop.type);
+              const dotColor = assetClass ? assetClass.color : '#B78A2D';
               const Icon = assetClass ? assetClass.icon : Store;
               
               return (
@@ -257,8 +255,8 @@ export default function PortfolioPage() {
             {/* Airbnb Style Popup */}
             {selectedProperty && (
               <Popup
-                longitude={(COORDS_MAP[selectedProperty.id] || { lat: -22.5609, lng: 17.0836 }).lng}
-                latitude={(COORDS_MAP[selectedProperty.id] || { lat: -22.5609, lng: 17.0836 }).lat}
+                longitude={(selectedProperty.coordinates || { lat: -22.5609, lng: 17.0836 }).lng}
+                latitude={(selectedProperty.coordinates || { lat: -22.5609, lng: 17.0836 }).lat}
                 anchor="top"
                 onClose={() => setSelectedPropertyId(null)}
                 closeButton={false}

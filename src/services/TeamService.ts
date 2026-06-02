@@ -9,6 +9,8 @@ export interface TeamMember {
   bio: string;
   quals?: string;
   image: string;
+  committees?: string[];
+  experience?: string;
 }
 
 export class TeamService {

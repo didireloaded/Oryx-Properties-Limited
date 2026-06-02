@@ -106,8 +106,12 @@ export default function AboutClient({ teamData }: { teamData: TeamMember[] }) {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '2rem' }}>
               {directors.map((person, i) => (
                 <div key={i} onClick={() => setSelectedPerson(person)} onMouseEnter={() => setHoveredPerson(person.name)} onMouseLeave={() => setHoveredPerson(null)} style={{ cursor: 'pointer' }}>
-                  <div style={{ width: '100%', aspectRatio: '3/4', backgroundColor: 'rgba(255,255,255,0.05)', marginBottom: '1rem', overflow: 'hidden', borderRadius: '4px' }}>
-                    <img src={person.image} alt={person.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: hoveredPerson === person.name ? 'grayscale(0%)' : 'grayscale(100%)', transition: 'filter 0.5s ease' }} />
+                  <div style={{ width: '100%', aspectRatio: '3/4', backgroundColor: 'rgba(255,255,255,0.05)', marginBottom: '1rem', overflow: 'hidden', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    {person.image ? (
+                      <img src={person.image} alt={person.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: hoveredPerson === person.name ? 'grayscale(0%)' : 'grayscale(100%)', transition: 'filter 0.5s ease' }} />
+                    ) : (
+                      <div style={{ fontSize: '3rem', color: 'var(--text-muted)' }}>{person.name.charAt(0)}</div>
+                    )}
                   </div>
                   <h4 style={{ fontSize: '1.125rem', color: 'var(--text-light)', fontWeight: 500 }}>{person.name}</h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>{person.role}</p>
@@ -121,8 +125,12 @@ export default function AboutClient({ teamData }: { teamData: TeamMember[] }) {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
               {executives.map((person, i) => (
                 <div key={i} onClick={() => setSelectedPerson(person)} onMouseEnter={() => setHoveredPerson(person.name)} onMouseLeave={() => setHoveredPerson(null)} style={{ cursor: 'pointer' }}>
-                  <div style={{ width: '100%', aspectRatio: '3/4', backgroundColor: 'rgba(255,255,255,0.05)', marginBottom: '1rem', overflow: 'hidden', borderRadius: '4px' }}>
-                     <img src={person.image} alt={person.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: hoveredPerson === person.name ? 'grayscale(0%)' : 'grayscale(100%)', transition: 'filter 0.5s ease' }} />
+                  <div style={{ width: '100%', aspectRatio: '3/4', backgroundColor: 'rgba(255,255,255,0.05)', marginBottom: '1rem', overflow: 'hidden', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                     {person.image ? (
+                       <img src={person.image} alt={person.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: hoveredPerson === person.name ? 'grayscale(0%)' : 'grayscale(100%)', transition: 'filter 0.5s ease' }} />
+                     ) : (
+                       <div style={{ fontSize: '3rem', color: 'var(--text-muted)' }}>{person.name.charAt(0)}</div>
+                     )}
                   </div>
                   <h4 style={{ fontSize: '1.125rem', color: 'var(--text-light)', fontWeight: 500 }}>{person.name}</h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>{person.role}</p>
@@ -151,15 +159,35 @@ export default function AboutClient({ teamData }: { teamData: TeamMember[] }) {
                 <X size={20} />
               </button>
               
-              <div style={{ width: '40%', backgroundColor: 'var(--text-dark-muted)' }}>
-                <img src={selectedPerson.image} alt={selectedPerson.name} style={{ width: '100%', height: '100%', objectFit: 'cover', minHeight: '400px' }} />
+              <div style={{ width: '40%', backgroundColor: 'var(--text-dark-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                {selectedPerson.image ? (
+                  <img src={selectedPerson.image} alt={selectedPerson.name} style={{ width: '100%', height: '100%', objectFit: 'cover', minHeight: '400px' }} />
+                ) : (
+                  <div style={{ fontSize: '5rem', color: 'var(--text-muted)' }}>{selectedPerson.name.charAt(0)}</div>
+                )}
               </div>
               <div style={{ width: '60%', padding: '3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <div style={{ color: 'var(--accent-gold)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>{selectedPerson.role}</div>
                 <h3 style={{ fontSize: '2.5rem', color: 'var(--text-light)', fontWeight: 300, marginBottom: '1.5rem', lineHeight: 1.1 }}>{selectedPerson.name}</h3>
                 <p style={{ color: 'var(--text-muted)', fontSize: '1.125rem', lineHeight: 1.6 }}>{selectedPerson.bio}</p>
+                {selectedPerson.experience && (
+                  <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                    <div style={{ color: 'var(--text-light)', fontSize: '0.875rem', fontWeight: 600, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Experience</div>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.6 }}>{selectedPerson.experience}</p>
+                  </div>
+                )}
+                {selectedPerson.committees && selectedPerson.committees.length > 0 && (
+                  <div style={{ marginTop: '1.5rem' }}>
+                    <div style={{ color: 'var(--text-light)', fontSize: '0.875rem', fontWeight: 600, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Committees</div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                      {selectedPerson.committees.map(c => (
+                        <span key={c} style={{ backgroundColor: 'rgba(255,255,255,0.05)', color: 'var(--text-muted)', padding: '4px 12px', borderRadius: '100px', fontSize: '0.75rem' }}>{c}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 {selectedPerson.quals && (
-                  <p style={{ color: 'var(--text-muted)', fontSize: '1rem', marginTop: '1rem' }}>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '1rem', marginTop: '1.5rem' }}>
                     <strong>Qualifications: </strong> {selectedPerson.quals}
                   </p>
                 )}
