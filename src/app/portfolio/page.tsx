@@ -229,20 +229,6 @@ export default function PortfolioPage() {
         </div>
 
         {/* Right: Mapbox Implementation */}
-        <div style={{ flex: 1, position: 'relative' }}>
-          <Map
-            longitude={viewState.longitude}
-            latitude={viewState.latitude}
-            zoom={viewState.zoom}
-            onMove={evt => setViewState(evt.viewState)}
-            mapStyle="mapbox://styles/mapbox/dark-v11"
-            mapboxAccessToken={MAPBOX_TOKEN}
-            style={{ width: '100%', height: '100%' }}
-          >
-            {properties.map(prop => {
-              const coords = COORDS_MAP[prop.id] || { lat: -22.5609, lng: 17.0836 };
-              const assetClass = ASSET_CLASSES.find(c => c.id === prop.type);
-              const dotColor = assetClass ? assetClass.color : 'var(--accent-gold)';
               const Icon = assetClass ? assetClass.icon : Store;
               
               return (

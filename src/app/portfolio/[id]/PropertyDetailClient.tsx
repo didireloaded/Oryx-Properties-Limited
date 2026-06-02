@@ -80,7 +80,7 @@ export default function PropertyDetailClient({ property }: { property: any }) {
                 longitude={coords.lng}
                 latitude={coords.lat}
                 zoom={14}
-                mapStyle="mapbox://styles/mapbox/dark-v11"
+                mapStyle="mapbox://styles/mapbox/satellite-streets-v12"
                 mapboxAccessToken={MAPBOX_TOKEN}
               >
                 <Marker longitude={coords.lng} latitude={coords.lat} anchor="bottom">
