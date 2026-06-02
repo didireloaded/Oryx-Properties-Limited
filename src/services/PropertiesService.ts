@@ -1,9 +1,34 @@
 import { supabase, isSupabaseConfigured } from '@/lib/supabaseClient';
+import fallbackData from '@/data/properties.json';
 
 export class PropertiesService {
+  private static getLocalProperties(params?: { type?: string; query?: string; isLeasing?: boolean }) {
+    let results = fallbackData as any[];
+
+    if (params) {
+      if (params.type) {
+        results = results.filter(p => p.type === params.type);
+      }
+      if (typeof params.isLeasing === 'boolean') {
+        results = results.filter(p => p.isLeasing === params.isLeasing);
+      }
+      if (params.query) {
+        const q = params.query.toLowerCase();
+        results = results.filter(p =>
+          (p.name && p.name.toLowerCase().includes(q)) ||
+          (p.location && p.location.toLowerCase().includes(q)) ||
+          (p.description && p.description.toLowerCase().includes(q))
+        );
+      }
+    }
+
+    return results;
+  }
+
   static async getProperties(params?: { type?: string; query?: string; isLeasing?: boolean }) {
     if (!isSupabaseConfigured() || !supabase) {
-      throw new Error("Supabase is not configured.");
+      console.warn("Supabase not configured — using local properties data.");
+      return this.getLocalProperties(params);
     }
 
     try {
@@ -25,16 +50,18 @@ export class PropertiesService {
       const { data, error } = await queryBuilder;
       if (error) throw error;
       
-      return data || [];
+      return (data && data.length > 0) ? data : this.getLocalProperties(params);
     } catch (e) {
       console.error("Supabase Error fetching properties:", e);
-      throw e;
+      return this.getLocalProperties(params);
     }
   }
 
   static async getPropertyById(id: string) {
     if (!isSupabaseConfigured() || !supabase) {
-      throw new Error("Supabase is not configured.");
+      console.warn("Supabase not configured — using local property data.");
+      const property = (fallbackData as any[]).find(p => p.id === id);
+      return property || null;
     }
 
     try {
@@ -43,7 +70,9 @@ export class PropertiesService {
       return data;
     } catch (e) {
       console.error("Supabase Error fetching property by ID:", e);
-      throw e;
+      // Fallback to local data
+      const property = (fallbackData as any[]).find(p => p.id === id);
+      return property || null;
     }
   }
 }

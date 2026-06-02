@@ -4,6 +4,11 @@ import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 import { Download, Eye, FileText, Search, Filter, TrendingUp, BarChart3, PieChart, Calendar, Mail, Phone, MapPin, ChevronDown, ArrowRight } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, LineChart, Line } from 'recharts';
+import { DocumentLibrary } from '@/components/investors/DocumentLibrary';
+import { AnnualReportsTimeline } from '@/components/investors/AnnualReportsTimeline';
+import { NensTimeline } from '@/components/investors/NensTimeline';
+import { GovernanceCentre } from '@/components/investors/GovernanceCentre';
+
 
 function CountUp({ to, suffix = '', prefix = '', decimals = 0 }: { to: number; suffix?: string, prefix?: string, decimals?: number }) {
   const count = useMotionValue(0);
@@ -408,119 +413,26 @@ export default function InvestorCentre() {
           </div>
         </section>
 
-        {/* ANNUAL REPORTS GALLERY */}
-        <section style={{ padding: '6rem 0', borderTop: '1px solid var(--border-glass)' }}>
+        {/* ANNUAL REPORTS TIMELINE */}
+        <AnnualReportsTimeline />
+
+        {/* NENS AND GOVERNANCE SECTION */}
+        <section className="py-12 border-t border-white/10" style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}>
           <div className="container">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '3rem' }}>
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 300, color: 'var(--text-light)' }}>Annual Reports</h2>
-              <a href="#" style={{ color: 'var(--accent-gold)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.875rem', fontWeight: 500 }}>
-                View Archive <ArrowRight size={16} />
-              </a>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
-              {annualReports.map((report, i) => (
-                <div key={i} className="group" style={{ cursor: 'pointer' }}>
-                  <div style={{ width: '100%', aspectRatio: '1/1.4', backgroundColor: 'rgba(15,20,35,0.8)', borderRadius: '12px', marginBottom: '1.5rem', position: 'relative', overflow: 'hidden', border: '1px solid var(--border-glass)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    {/* Placeholder for Cover Image */}
-                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(45deg, var(--bg-secondary), var(--bg-primary))', opacity: 0.5 }}></div>
-                    <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', padding: '2rem' }}>
-                      <div style={{ fontSize: '3rem', color: 'var(--accent-gold)', fontWeight: 300, opacity: 0.3 }}>{report.year}</div>
-                    </div>
-
-                    <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: 0, backgroundColor: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(8px)', transition: 'opacity 0.3s' }} className="group-hover:opacity-100 z-10">
-                      <div style={{ display: 'flex', gap: '1rem' }}>
-                        <button style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'var(--accent-gold)', border: 'none', color: 'var(--bg-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'transform 0.2s' }} className="hover:scale-110">
-                          <Eye size={20} />
-                        </button>
-                        <button style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid var(--border-glass)', color: 'var(--text-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'transform 0.2s' }} className="hover:scale-110">
-                          <Download size={20} />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <h4 style={{ fontSize: '1.125rem', color: 'var(--text-light)', marginBottom: '0.5rem', fontWeight: 500 }}>{report.title}</h4>
-                  <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>{report.summary}</p>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              <div className="lg:col-span-1">
+                <NensTimeline />
+              </div>
+              <div className="lg:col-span-2">
+                <GovernanceCentre />
+              </div>
             </div>
           </div>
         </section>
 
         {/* DOCUMENT LIBRARY */}
-        <section style={{ padding: '6rem 0', backgroundColor: 'rgba(0,0,0,0.2)', borderTop: '1px solid var(--border-glass)' }}>
-          <div className="container">
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 300, color: 'var(--text-light)', marginBottom: '3rem' }}>Document Library</h2>
-            
-            <div className="glass-card-premium" style={{ padding: '2rem' }}>
-              
-              {/* Search & Filter Bar */}
-              <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem' }}>
-                <div style={{ flex: 1, position: 'relative' }}>
-                  <Search size={20} color="var(--text-muted)" style={{ position: 'absolute', left: '1.5rem', top: '50%', transform: 'translateY(-50%)' }} />
-                  <input 
-                    type="text" 
-                    placeholder="Search NENS announcements, governance, or financials..." 
-                    value={searchQuery} 
-                    onChange={e => setSearchQuery(e.target.value)} 
-                    style={{ width: '100%', padding: '1rem 1.5rem 1rem 4rem', backgroundColor: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-glass)', borderRadius: '12px', color: 'var(--text-light)', fontSize: '1rem', outline: 'none' }} 
-                  />
-                </div>
-                
-                <div style={{ position: 'relative' }}>
-                  <select 
-                    value={docFilter}
-                    onChange={e => setDocFilter(e.target.value)}
-                    style={{ appearance: 'none', padding: '1rem 3rem 1rem 1.5rem', backgroundColor: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-glass)', borderRadius: '12px', color: 'var(--text-light)', fontSize: '1rem', outline: 'none', cursor: 'pointer' }}
-                  >
-                    {docTypes.map(type => (
-                      <option key={type} value={type} style={{ backgroundColor: 'var(--bg-secondary)', color: 'var(--text-light)' }}>{type}</option>
-                    ))}
-                  </select>
-                  <ChevronDown size={16} color="var(--text-muted)" style={{ position: 'absolute', right: '1rem', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
-                </div>
-              </div>
-
-              {/* Document List */}
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <AnimatePresence>
-                  {filteredDocs.map((doc, i) => (
-                    <motion.div 
-                      key={i} 
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, height: 0, padding: 0 }}
-                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.5rem', borderBottom: i !== filteredDocs.length - 1 ? '1px solid var(--border-glass)' : 'none', borderRadius: '8px', transition: 'background-color 0.2s', overflow: 'hidden' }} 
-                      className="hover:bg-white/5"
-                    >
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                        <div style={{ width: '48px', height: '48px', borderRadius: '12px', backgroundColor: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          <FileText size={24} color="var(--accent-gold)" />
-                        </div>
-                        <div>
-                          <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.25rem' }}>{doc.type}</div>
-                          <h4 style={{ color: 'var(--text-light)', fontSize: '1.125rem', fontWeight: 500 }}>{doc.title}</h4>
-                        </div>
-                      </div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '3rem' }}>
-                        <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>{doc.date}</span>
-                        <button style={{ background: 'none', border: '1px solid var(--border-glass)', padding: '0.5rem 1rem', borderRadius: '100px', color: 'var(--text-light)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.875rem', transition: 'all 0.2s' }} className="hover:border-accent-gold hover:text-accent-gold">
-                          <Download size={14} /> Download
-                        </button>
-                      </div>
-                    </motion.div>
-                  ))}
-                  
-                  {filteredDocs.length === 0 && (
-                    <div style={{ padding: '3rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-                      No documents found matching your criteria.
-                    </div>
-                  )}
-                </AnimatePresence>
-              </div>
-
-            </div>
-          </div>
+        <section style={{ backgroundColor: 'rgba(0,0,0,0.2)', borderTop: '1px solid var(--border-glass)' }}>
+          <DocumentLibrary />
         </section>
 
         {/* FINANCIAL CALENDAR & INVESTOR RELATIONS */}

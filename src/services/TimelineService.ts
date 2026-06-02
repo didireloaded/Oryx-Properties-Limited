@@ -1,4 +1,5 @@
 import { supabase, isSupabaseConfigured } from '@/lib/supabaseClient';
+import fallbackData from '@/data/timeline.json';
 
 export interface TimelineEvent {
   year: number;
@@ -12,7 +13,8 @@ export interface TimelineEvent {
 export class TimelineService {
   static async getTimeline(): Promise<TimelineEvent[]> {
     if (!isSupabaseConfigured() || !supabase) {
-      throw new Error("Supabase is not configured.");
+      console.warn("Supabase not configured — using local timeline data.");
+      return fallbackData as TimelineEvent[];
     }
 
     try {
@@ -23,10 +25,10 @@ export class TimelineService {
         
       if (error) throw error;
       
-      return data || [];
+      return (data && data.length > 0) ? data : fallbackData as TimelineEvent[];
     } catch (e) {
       console.error("Supabase Error fetching timeline:", e);
-      throw e;
+      return fallbackData as TimelineEvent[];
     }
   }
 }
