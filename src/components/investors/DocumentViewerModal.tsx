@@ -16,9 +16,9 @@ export function DocumentViewerModal({ document, onClose }: DocumentViewerModalPr
 
   // Prevent background scrolling
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
+    window.document.body.style.overflow = 'hidden';
     return () => {
-      document.body.style.overflow = 'auto';
+      window.document.body.style.overflow = 'auto';
     };
   }, []);
 
