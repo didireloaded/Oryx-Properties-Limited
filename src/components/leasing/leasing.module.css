@@ -1,0 +1,263 @@
+/* LEASING PORTAL CSS - Dark First Institutional Theme */
+
+.leasingSection {
+  padding: 8rem 0;
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+}
+
+.leasingHeader {
+  margin-bottom: 4rem;
+  max-width: 800px;
+}
+
+.leasingTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.leasingDesc {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* FILTER BAR */
+.filterBar {
+  background: var(--color-surface-card);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.filterLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+}
+
+.filterSelect {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: var(--color-text-primary);
+  font-size: 1.125rem;
+  padding-bottom: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.filterSelect option {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+/* RESULTS GRID */
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.spaceCard {
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+
+.spaceCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.spaceImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.spaceContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.spaceProperty {
+  font-size: 0.875rem;
+  color: var(--color-gold-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.spaceUnit {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.spaceMetrics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.spaceMetric {
+  display: flex;
+  flex-direction: column;
+}
+
+.spaceMetricLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.spaceMetricValue {
+  font-size: 1.125rem;
+  color: var(--color-text-primary);
+}
+
+.enquireBtn {
+  margin-top: auto;
+  background: transparent;
+  border: 1px solid var(--color-text-primary);
+  color: var(--color-text-primary);
+  padding: 0.75rem;
+  border-radius: var(--radius-pill);
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.spaceCard:hover .enquireBtn {
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+}
+
+/* MODAL */
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.modalContent {
+  background: var(--color-bg-primary);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.closeBtn:hover {
+  color: var(--color-text-primary);
+}
+
+.modalTitle {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.modalSubtitle {
+  color: var(--color-gold-primary);
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.formGroup input, .formGroup textarea {
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  outline: none;
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+  border-color: var(--color-gold-primary);
+}
+
+.submitBtn {
+  width: 100%;
+  background: var(--color-gold-primary);
+  color: var(--color-bg-primary);
+  border: none;
+  padding: 1rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submitBtn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .resultsGrid { grid-template-columns: repeat(2, 1fr); }
+  .filterBar { flex-direction: column; align-items: stretch; }
+}
+
+@media (max-width: 768px) {
+  .resultsGrid { grid-template-columns: 1fr; }
+}

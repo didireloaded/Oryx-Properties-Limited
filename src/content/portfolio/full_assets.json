@@ -1,0 +1,85 @@
+[
+  {
+    "id": "maerua-mall",
+    "name": "Maerua Mall",
+    "sector": "Retail",
+    "location": "Windhoek, Khomas Region",
+    "gla": 42500,
+    "occupancy": 98.2,
+    "wale": 5.4,
+    "valuation": 1250000000,
+    "description": "Maerua Mall is a premier regional shopping centre and mixed-use precinct in the heart of Windhoek. It represents the flagship retail asset in the Oryx Properties portfolio, offering a comprehensive mix of fashion, lifestyle, entertainment, and commercial services.",
+    "anchorTenants": ["Checkers", "Edgars", "Virgin Active", "Ster-Kinekor"],
+    "images": [
+      "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=2126&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1567449303183-ae0d6ed1498e?q=80&w=1974&auto=format&fit=crop"
+    ],
+    "vacancies": [
+      { "unit": "Shop 14B", "size": 125, "type": "Retail - Ground Floor", "rate": "On Application" },
+      { "unit": "Shop 88", "size": 84, "type": "Retail - First Floor", "rate": "On Application" }
+    ],
+    "downloads": [
+      { "title": "Maerua Mall Leasing Brochure", "file": "#" },
+      { "title": "Tenant Design Criteria", "file": "#" }
+    ],
+    "manager": {
+      "name": "Sarah Van Zyl",
+      "email": "svanzyl@oryxprop.com",
+      "phone": "+264 61 423 200"
+    }
+  },
+  {
+    "id": "gustav-voigts",
+    "name": "Gustav Voigts Centre",
+    "sector": "Retail & Office",
+    "location": "Windhoek CBD",
+    "gla": 24000,
+    "occupancy": 95.5,
+    "wale": 4.8,
+    "valuation": 850000000,
+    "description": "Located in the bustling central business district of Windhoek, Gustav Voigts Centre combines prime retail space with high-grade commercial offices. It remains a historic and strategic asset in the portfolio.",
+    "anchorTenants": ["Checkers", "Wecke & Voigts", "Avani Hotel (Integrated)"],
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "vacancies": [
+      { "unit": "Office Suite 402", "size": 350, "type": "Commercial Office", "rate": "N$ 185/m²" },
+      { "unit": "Shop 12", "size": 45, "type": "Retail Kiosk", "rate": "N$ 320/m²" }
+    ],
+    "downloads": [
+      { "title": "CBD Parking Strategy", "file": "#" },
+      { "title": "Floor Plans - Level 4", "file": "#" }
+    ],
+    "manager": {
+      "name": "David Mutota",
+      "email": "dmutota@oryxprop.com",
+      "phone": "+264 61 423 210"
+    }
+  },
+  {
+    "id": "prosperita-park",
+    "name": "Prosperita Industrial Park",
+    "sector": "Industrial",
+    "location": "Prosperita, Windhoek",
+    "gla": 18500,
+    "occupancy": 100.0,
+    "wale": 6.2,
+    "valuation": 320000000,
+    "description": "A high-grade logistics and light industrial park located in Windhoek's premier industrial node, offering excellent access to major transport routes.",
+    "anchorTenants": ["Namibia Logistics", "Bokomo Distribution"],
+    "images": [
+      "https://images.unsplash.com/photo-1586528116311-ad8ed7fcce36?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "vacancies": [],
+    "downloads": [
+      { "title": "Site Master Plan", "file": "#" }
+    ],
+    "manager": {
+      "name": "Hendrik Grobler",
+      "email": "hgrobler@oryxprop.com",
+      "phone": "+264 61 423 220"
+    }
+  }
+]

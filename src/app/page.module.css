@@ -1,0 +1,630 @@
+.main {
+  width: 100%;
+}
+
+/* 1. HERO (70% Editorial Luxury, 20% Data, 10% Glass) */
+.heroSection {
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary-navy);
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.heroBackground img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 71, 104, 0.85); /* Dark overlay */
+}
+
+.heroContainer {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.heroLeft {
+  color: var(--color-white);
+}
+
+.heroTitle {
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 1.05;
+  margin-bottom: 2rem;
+  color: var(--color-white);
+  letter-spacing: -0.02em;
+}
+
+.heroSubheadline {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  font-weight: 300;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.heroBtnOutline {
+  border-color: rgba(255,255,255,0.3) !important;
+  color: var(--color-white) !important;
+}
+.heroBtnOutline:hover {
+  background-color: var(--color-white) !important;
+  color: var(--color-primary-navy) !important;
+}
+
+/* Bloomberg Glass Card (ONLY glassmorphism on site) */
+.bloombergCard {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  box-shadow: var(--glass-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bloombergStat {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 1rem;
+}
+
+.bloombergStat:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.bLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.5rem;
+}
+
+.bValue {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+/* 2. INVESTMENT SNAPSHOT (15% Bento Grid UI) */
+.snapshotSection {
+  background-color: #f2f2f7; /* Apple-esque light grey */
+  padding: 8rem 0;
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 1.5rem;
+}
+
+.bentoCard {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bentoCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.bentoCardLarge {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: var(--color-primary-navy);
+  color: var(--color-white);
+}
+
+.bentoCardWide {
+  grid-column: span 2;
+}
+
+.bentoLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.bentoCardLarge .bentoLabel {
+  opacity: 0.8;
+  color: var(--color-gold);
+}
+
+.bentoValue {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--color-primary-navy);
+}
+
+.bentoCardLarge .bentoValue {
+  font-size: 5rem;
+  color: var(--color-white);
+  margin-top: auto;
+}
+
+.bentoAction {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary-navy);
+  margin-top: auto;
+}
+
+/* 3. WHY ORYX (Editorial Luxury) */
+.whyOryxSection {
+  background-color: var(--color-white);
+  padding: 10rem 0;
+}
+
+.editorialGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.editorialCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorialIcon {
+  color: var(--color-primary-navy);
+  margin-bottom: 3rem;
+}
+
+.editorialCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary-navy);
+  line-height: 1.2;
+}
+
+.editorialCard p {
+  font-size: 1rem;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+/* 4. PORTFOLIO OVERVIEW (Lume Data Intelligence) */
+.portfolioOverviewGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 6rem;
+}
+
+.poLeft {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: var(--radius-sm);
+  padding: 4rem;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.mockChart {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.chartBar {
+  flex: 1;
+  background-color: var(--color-primary-navy);
+  border-radius: 4px;
+  position: relative;
+  transition: height 1s ease;
+}
+
+.chartBar span {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.poRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.lumeCard {
+  background: var(--color-white);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.lumeCard:hover {
+  border-color: var(--color-primary-navy);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.lumeMetrics {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.lumeMetrics span {
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  margin-right: 0.25rem;
+  font-weight: 600;
+}
+
+/* 5. NAMIBIA FOOTPRINT (Data Intelligence Map) */
+.mapSection {
+  padding: 8rem 0;
+  background-color: var(--color-white);
+}
+
+.mapDarkContainer {
+  background-color: #0A0F14; /* Deep finance dark */
+  border-radius: var(--radius-lg);
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.mapPin {
+  position: absolute;
+  cursor: pointer;
+}
+
+.goldMarker {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(183, 138, 45, 0.3);
+}
+
+.mapPopup {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: 1rem;
+  background: var(--color-white);
+  width: 300px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mapPin:hover .mapPopup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mapPopup img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* 6. FEATURED ASSETS (Magazine Layout) */
+.featuredAssetItem {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.featuredAssetItem:last-child {
+  margin-bottom: 0;
+}
+
+.faReverse {
+  grid-template-columns: 1fr 1.5fr;
+}
+.faReverse .faImage {
+  order: 2;
+}
+.faReverse .faContent {
+  order: 1;
+}
+
+.faImage {
+  height: 700px;
+}
+
+.faImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faMeta {
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.faMetrics {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.faMetrics div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+
+.faMetrics strong {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  color: var(--color-primary-navy);
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* 7. INVESTOR CENTRE (Institutional Finance) */
+.investorCentreDark {
+  background-color: var(--color-primary-navy);
+  padding: 10rem 0;
+}
+
+.icHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.icGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px; /* Borders */
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.icCard {
+  background: var(--color-primary-navy);
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: background 0.3s ease;
+}
+
+.icCard:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.icIcon {
+  color: var(--color-gold);
+}
+
+.icTitle {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* 8. PERFORMANCE (Institutional Finance + Bento Grid) */
+.perfGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+}
+
+.perfCard {
+  background: var(--color-white);
+  padding: 3rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.perfCardWide {
+  grid-column: span 2;
+}
+
+.perfLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.perfValue {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-primary-navy);
+  font-family: var(--font-heading);
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.perfChartMockup {
+  height: 80px;
+  background: linear-gradient(to right, rgba(0,0,0,0.02) 0%, rgba(4,71,104,0.1) 100%);
+  border-radius: 2px;
+  margin-top: auto;
+}
+
+/* 9. LEADERSHIP (Corporate Annual Report UI) */
+.leadershipGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}
+
+.leaderPhoto {
+  height: 500px;
+  background: #eee;
+  filter: grayscale(100%) contrast(1.1);
+  background-size: cover;
+  background-position: center;
+}
+
+/* 10. NEWS (Editorial Publishing UI) */
+.newsEditorialLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6rem;
+}
+
+.newsDate {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.newsSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsSideItem {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.newsSideItem:last-child {
+  border-bottom: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .heroSubheadline {
+    margin: 0 auto 3rem;
+  }
+  .heroActions {
+    justify-content: center;
+  }
+  .bentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .portfolioOverviewGrid, .featuredAssetItem, .newsEditorialLayout {
+    grid-template-columns: 1fr;
+  }
+  .faReverse .faImage {
+    order: 1;
+  }
+  .faReverse .faContent {
+    order: 2;
+  }
+  .icGrid, .perfGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .perfCardWide {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .editorialGrid, .leadershipGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .bentoGrid, .icGrid, .perfGrid {
+    grid-template-columns: 1fr;
+  }
+  .bentoCardLarge, .bentoCardWide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .icHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "metrics": {
+    "portfolioValue": "4.7B",
+    "marketCap": "1.5B",
+    "occupancy": "96%",
+    "revenueGrowth": "+8.5%",
+    "netRentalIncome": "N$ 342M",
+    "navPerShare": "2,450c",
+    "distributionPerShare": "54.2c"
+  },
+  "documents": [
+    {
+      "id": "doc1",
+      "title": "2023 Integrated Annual Report",
+      "date": "2023-10-15",
+      "category": "Annual Report",
+      "fileUrl": "/assets/reports/annual-report-2023.pdf",
+      "year": 2023
+    },
+    {
+      "id": "doc2",
+      "title": "2023 Audited Financial Results",
+      "date": "2023-09-01",
+      "category": "Financial Results",
+      "fileUrl": "/assets/reports/financial-results-2023.pdf",
+      "year": 2023
+    },
+    {
+      "id": "doc3",
+      "title": "Declaration of Final Dividend",
+      "date": "2023-09-05",
+      "category": "NENS Announcement",
+      "fileUrl": "/assets/nens/dividend-2023.pdf",
+      "year": 2023
+    },
+    {
+      "id": "doc4",
+      "title": "Board Charter",
+      "date": "2022-01-01",
+      "category": "Governance",
+      "fileUrl": "/assets/governance/board-charter.pdf",
+      "year": 2022
+    },
+    {
+      "id": "doc5",
+      "title": "2022 Integrated Annual Report",
+      "date": "2022-10-12",
+      "category": "Annual Report",
+      "fileUrl": "/assets/reports/annual-report-2022.pdf",
+      "year": 2022
+    }
+  ]
+}

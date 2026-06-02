@@ -1,0 +1,312 @@
+/* ASSET PAGE CSS - Dark First Institutional Theme */
+
+.assetHero {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  background-color: var(--color-bg-primary);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+}
+
+.heroGallery {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.heroGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--color-bg-primary) 0%, rgba(10,22,40,0.2) 100%);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.assetSector {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gold-primary);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.assetName {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--color-text-primary);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.assetLocation {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* METRICS BAR */
+.metricsSection {
+  background-color: var(--color-bg-primary);
+  margin-top: -2rem;
+  position: relative;
+  z-index: 20;
+}
+
+.metricsBar {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.metricBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metricLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+}
+
+.metricValue {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-text-primary);
+}
+
+/* PROPERTY INTELLIGENCE BENTO */
+.intelSection {
+  padding: 4rem 0 8rem;
+  background-color: var(--color-bg-primary);
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+}
+
+.bentoCard {
+  background: var(--color-surface-card);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+}
+
+.bentoOverview {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.bentoHeader {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-gold-primary);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 1rem;
+}
+
+.overviewText {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.anchorList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.anchorBadge {
+  background: rgba(255,255,255,0.05);
+  color: var(--color-text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.bentoMap {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+}
+
+/* Static abstracted map style */
+.staticMap {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mapMarker {
+  width: 20px;
+  height: 20px;
+  background: var(--color-gold-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(183,138,45,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.mapGrid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: 1;
+}
+
+.bentoDownloads {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.downloadBtn {
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--color-text-primary);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.downloadBtn:hover {
+  border-color: var(--color-gold-primary);
+  background: rgba(255,255,255,0.05);
+}
+
+/* AVAILABILITY GRID */
+.availSection {
+  background-color: var(--color-bg-secondary);
+  padding: 6rem 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.availHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.availTitle {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-text-primary);
+}
+
+.availContact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--color-surface-card);
+  padding: 1rem 2rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.availManager {
+  display: flex;
+  flex-direction: column;
+}
+.mgrName { color: var(--color-gold-primary); font-weight: 500; }
+.mgrEmail { color: var(--color-text-muted); font-size: 0.875rem; }
+
+.availTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.availTable th {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: var(--color-text-muted);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.availTable td {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: var(--color-text-primary);
+}
+
+.availActionBtn {
+  background: transparent;
+  border: 1px solid var(--color-gold-primary);
+  color: var(--color-gold-primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.availActionBtn:hover {
+  background: var(--color-gold-primary);
+  color: var(--color-bg-primary);
+}
+
+.noVacancies {
+  text-align: center;
+  padding: 4rem;
+  background: var(--color-surface-card);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-secondary);
+  border: 1px dashed rgba(255,255,255,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .metricsBar { flex-wrap: wrap; gap: 2rem; }
+  .bentoGrid { grid-template-columns: 1fr; }
+  .bentoOverview { grid-column: 1 / -1; grid-row: auto; }
+  .availHeader { flex-direction: column; align-items: flex-start; gap: 2rem; }
+}

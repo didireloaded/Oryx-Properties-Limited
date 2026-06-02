@@ -1,0 +1,1083 @@
+/* GLOBAL INVESTOR VARIABLES (Dark Theme) */
+.heroSection, .healthSection, .explorerSection, .dividendSection, .reportsSection, .announcementsSection, .calendarSection, .govSection, .perfDashboardSection, .growthSection {
+  background-color: var(--color-bg-primary);
+  color: #f8fafc;
+  position: relative;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: var(--color-text-primary);
+}
+
+.sectionDesc {
+  font-size: 1.25rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+}
+
+/* INVESTOR HERO */
+.heroSection {
+  padding: 8rem 0;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle at top right, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+}
+
+.heroHeader {
+  margin-bottom: 6rem;
+  max-width: 800px;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, var(--color-text-primary), #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.heroMetricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.glassCard {
+  background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 10px 30px rgba(0,0,0,0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glassCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(212,175,55,0.5);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.glassValue {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.glassLabel {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+/* ORYX AT A GLANCE (Sticky Panel) */
+.stickyGlanceWrapper {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .stickyGlanceWrapper {
+    display: block;
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+  }
+}
+
+.glancePanel {
+  background: rgba(10,15,25,0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  width: 250px;
+}
+
+.glanceTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.glanceRow {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.glanceRow:last-child { margin-bottom: 0; }
+
+.glanceLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  margin-bottom: 0.25rem;
+}
+
+.glanceValue {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+/* PERFORMANCE DASHBOARD */
+.perfDashboardSection {
+  padding: 6rem 0 2rem;
+  border-top: 1px solid rgba(15,25,40,0.65);
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dashboardCard {
+  background: #0f1624;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dashLabel {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+}
+
+.dashValue {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-text-primary);
+}
+
+/* GROWTH TIMELINE */
+.growthSection {
+  padding: 6rem 0;
+}
+
+.growthWrapper {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(15,25,40,0.65);
+  border-radius: 24px;
+  padding: 4rem;
+}
+
+.sliderContainer {
+  margin-bottom: 4rem;
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.activeYearLabel {
+  color: var(--color-gold);
+  font-size: 2rem;
+}
+
+.yearSlider {
+  width: 100%;
+  appearance: none;
+  background: rgba(255,255,255,0.1);
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.yearSlider::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.yearSlider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.growthMetricsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.growthMetric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.growthLabel {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+}
+
+.growthValue {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+}
+
+/* HEALTH DASHBOARD */
+.healthSection {
+  padding: 6rem 0;
+}
+
+.healthGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.healthCard {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.healthHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.healthDot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #10b981; /* Default green for live/healthy */
+}
+
+.healthValue {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.healthLabel {
+  font-size: 1rem;
+  color: var(--color-gold);
+}
+
+/* ASSET PERFORMANCE EXPLORER */
+.explorerSection {
+  padding: 6rem 0;
+  border-bottom: 1px solid rgba(15,25,40,0.65);
+}
+
+.explorerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 6rem;
+}
+
+.sectorList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectorBtn {
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: var(--color-text-primary);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sectorBtnName {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.sectorBtnShare {
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  position: relative;
+  z-index: 2;
+}
+
+.sectorHighlight {
+  position: absolute;
+  inset: 0;
+  background: rgba(15,25,40,0.65);
+  border: 1px solid var(--color-gold);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.sectorDataContent {
+  background: rgba(255,255,255,0.02);
+  border-radius: 24px;
+  padding: 3rem;
+  height: 100%;
+}
+
+.sectorDataTitle {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-gold);
+  margin-bottom: 3rem;
+}
+
+.sectorMetricsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sMetric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sMLabel {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+
+.sMValue {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+}
+
+.sMList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sMList li {
+  font-size: 1.25rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.sMList li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 10px;
+  width: 6px; height: 6px;
+  background: var(--color-gold);
+  border-radius: 50%;
+}
+
+/* DIVIDEND CENTRE */
+.dividendSection {
+  padding: 8rem 0;
+}
+
+.divHeader {
+  margin-bottom: 4rem;
+}
+
+.chartContainer {
+  display: flex;
+  height: 400px;
+  gap: 2rem;
+}
+
+.chartYAxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.875rem;
+}
+
+.chartArea {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 10px;
+}
+
+.chartBarGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.barWrapper {
+  width: 60%;
+  max-width: 60px;
+  height: calc(100% - 30px);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.barFill {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.chartXAxis {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.chartTooltip {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-text-primary);
+  color: var(--color-primary-navy);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 140px;
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.chartTooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; left: 50%; transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: var(--color-text-primary) transparent transparent transparent;
+}
+
+.ttYear {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 0.25rem;
+}
+
+.ttRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+.ttRow span:last-child { font-weight: 600; }
+
+/* ANNUAL REPORTS */
+.reportsSection {
+  padding: 6rem 0;
+  border-top: 1px solid rgba(15,25,40,0.65);
+}
+
+.reportsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.reportCard {
+  cursor: pointer;
+}
+
+.reportCover {
+  width: 100%;
+  aspect-ratio: 3/4;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.reportCover img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.reportOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,15,25,0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reportCard:hover .reportCover img {
+  transform: scale(1.05);
+}
+
+.reportCard:hover .reportOverlay {
+  opacity: 1;
+}
+
+.reportBtn {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 180px;
+  justify-content: center;
+}
+
+.reportBtn:hover {
+  background: var(--color-text-primary);
+  color: var(--color-primary-navy);
+}
+
+.reportYear {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-gold);
+  margin-bottom: 0.25rem;
+}
+
+.reportTitle {
+  font-size: 1.125rem;
+  opacity: 0.8;
+}
+
+/* LATEST ANNOUNCEMENTS */
+.announcementsSection {
+  padding: 6rem 0;
+}
+
+.announcementsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.announcementCard {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 3rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.announcementCard:hover {
+  transform: translateY(-5px);
+  background: rgba(15,25,40,0.65);
+}
+
+.annMeta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.annDate {
+  font-size: 0.875rem;
+  opacity: 0.6;
+}
+
+.annType {
+  font-size: 0.875rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.annTitle {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.annBtn {
+  margin-top: auto;
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-gold);
+  padding-bottom: 0.25rem;
+  cursor: pointer;
+}
+
+/* INVESTOR CALENDAR */
+.calendarSection {
+  padding: 6rem 0;
+  border-top: 1px solid rgba(15,25,40,0.65);
+}
+
+.calendarGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calendarCard {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.calDateBox {
+  background: var(--color-gold);
+  color: var(--color-primary-navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.calMonth {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.calDay {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.calContent {
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calTitle {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.calDesc {
+  opacity: 0.7;
+  font-size: 1.125rem;
+}
+
+/* MANAGEMENT GOVERNANCE */
+.govSection {
+  padding: 8rem 0;
+}
+
+.govGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.execCard {
+  cursor: pointer;
+}
+
+.execImageWrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.execImageWrapper img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: grayscale(100%) contrast(1.2);
+  transition: filter 0.3s;
+}
+
+.execCard:hover .execImageWrapper img {
+  filter: grayscale(0%) contrast(1);
+}
+
+.execName {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.execRole {
+  color: var(--color-gold);
+  font-size: 1rem;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,15,25,0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 100;
+}
+
+.modalWrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  pointer-events: none;
+}
+
+.execModal {
+  background: #0f1624;
+  width: 100%; max-width: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+  pointer-events: auto;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: rgba(0,0,0,0.5);
+  color: var(--color-text-primary);
+  border: none;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  z-index: 10;
+}
+
+.modalImageWrapper {
+  width: 100%; height: 300px;
+}
+
+.modalImageWrapper img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+.modalContent {
+  padding: 2.5rem;
+}
+
+.modalTitle {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.modalRole {
+  color: var(--color-gold);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.modalBioBlock {
+  margin-bottom: 1.5rem;
+}
+
+.modalBioBlock h5 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.modalBioBlock p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* STOCK TICKER */
+.tickerWrapper {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  padding: 0;
+}
+
+.tickerBar {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.75rem 2rem;
+  background: rgba(10, 15, 25, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.8);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tickerBar::-webkit-scrollbar {
+  display: none;
+}
+
+.tickerLive {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.liveDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #555;
+  transition: background 0.3s;
+}
+
+.liveDotActive {
+  background: #22c55e;
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.6);
+  animation: livePulse 2s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  0%, 100% { box-shadow: 0 0 4px rgba(34, 197, 94, 0.4); }
+  50% { box-shadow: 0 0 12px rgba(34, 197, 94, 0.8); }
+}
+
+.liveLabel {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #22c55e;
+}
+
+.tickerSymbol {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.tickerSymbolText {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.tickerExchange {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+}
+
+.tickerPrice {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+  transition: color 0.3s;
+}
+
+.tickerFlashUp {
+  color: #22c55e !important;
+}
+
+.tickerFlashDown {
+  color: #ef4444 !important;
+}
+
+.tickerChange {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  flex-shrink: 0;
+}
+
+.tickerChangePct {
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.tickerDivider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+.tickerStat {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tickerStatLabel {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+
+.tickerStatValue {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8125rem;
+}
+
+.tickerTime {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: auto;
+  font-size: 0.75rem;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+/* LIVE INDICATOR BADGE (for hero cards) */
+.liveBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+}
+
+.liveBadgeDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: livePulse 2s ease-in-out infinite;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .heroMetricsGrid { grid-template-columns: repeat(2, 1fr); }
+  .dashboardGrid { grid-template-columns: repeat(2, 1fr); }
+  .healthGrid { grid-template-columns: repeat(3, 1fr); }
+  .growthMetricsGrid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+}
+
+@media (max-width: 991px) {
+  .explorerGrid { grid-template-columns: 1fr; }
+  .reportsGrid { grid-template-columns: repeat(2, 1fr); }
+  .announcementsList { grid-template-columns: 1fr; }
+  .govGrid { grid-template-columns: repeat(2, 1fr); }
+  .tickerBar { gap: 0.75rem; padding: 0.6rem 1rem; }
+}
+
+@media (max-width: 768px) {
+  .heroMetricsGrid { grid-template-columns: 1fr; }
+  .dashboardGrid { grid-template-columns: 1fr; }
+  .healthGrid { grid-template-columns: repeat(2, 1fr); }
+  .growthMetricsGrid { grid-template-columns: repeat(2, 1fr); }
+  .reportsGrid { grid-template-columns: 1fr; }
+  .calendarCard { grid-template-columns: 1fr; }
+  .calDateBox { padding: 1rem; flex-direction: row; gap: 1rem; }
+  .govGrid { grid-template-columns: 1fr; }
+  .tickerStat:nth-child(n+7) { display: none; }
+}
+

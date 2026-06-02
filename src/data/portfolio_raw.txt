@@ -1,0 +1,345 @@
+
+		
+		
+		
+		
+		
+			
+
+	
+		
+				
+		
+			
+				
+					
+						
+						
+					
+
+					
+					
+
+						
+						
+							
+								Home
+Company Overview
+
+	About Oryx Properties Limited
+	Directors
+	Our Team
+
+
+Our Properties
+
+	Retail
+	Industrial
+	Office
+	Residential
+	Spaces To Let
+
+
+Investors
+
+	Financial Reports
+	NENS Announcements
+	Debenture Trust Deed
+	DMTNP
+	Circulars
+	Share Trading
+
+
+News
+
+	Investor News
+
+
+CSR
+Careers
+	
+							
+						
+					
+				
+				
+					
+					
+	
+		
+			
+				Contact Us
+							
+		
+	
+
+					
+					
+			
+		
+					
+						
+													
+					
+
+			
+					
+						
+													
+					
+
+			
+	
+
+					
+					
+					
+
+	
+		
+		
+		
+	
+	
+		
+		
+	
+					
+				
+			
+		
+	
+			
+			
+
+	
+		
+			
+
+				OUR PORTFOLIO
+				
+					Portfolio				
+				
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				
+				
+			
+			
+				
+				HomePortfolio
+			
+		
+	
+
+    
+
+       	
+
+
+                
+            
+
+                			
+						
+
+
+	
+	
+				
+		
+							
+					
+				
+
+			Dunes Mall WalvisbayRetail
+		
+							
+
+			
+			
+					
+						
+
+
+	
+	
+				
+		
+							
+					
+				
+
+			Warehouse for Rent Joule Street Southern IndustrySpaces To Let
+		
+							
+
+			
+			
+					
+						
+
+
+	
+	
+				
+		
+							
+					
+				
+
+			Dagbreek School2023
+		
+							
+
+			
+			
+					
+						
+
+
+	
+	
+				
+		
+							
+					
+				
+
+			Sponsorship2023
+		
+							
+
+			
+			
+					
+						
+
+
+	
+	
+				
+		
+							
+					
+				
+
+			Side by Side2023
+		
+							
+
+			
+			
+					
+						
+
+
+	
+	
+				
+		
+							
+					
+				
+
+			Cancer Association2023
+		
+							
+
+			
+			
+		
+            
+
+            
+                
+
+                    Showing 1-6 of 37 results12345…7
+                
+            
+
+        
+
+    
+
+
+			
+			
+			
+
+
+			
+		
+			
+			
+				
+				
+					
+						
+													
+															
+						
+					
+							
+		
+	
+	
+
+	
+		
+			
+				Copyrights © 2021. All Rights Reserved by Oryx Properties
+			
+			
+				
+			
+			
+				Website Designed by:   Wakaitu Web Solutions 
+			
+		
+	
+	
+				
+		
+
+		
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ezy-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+
+
+/* <![CDATA[ */
+var eesfl_vars = {"ajaxurl":"https://oryxprop.com/wp-admin/admin-ajax.php","eeEditText":"Edit","eeConfirmDeleteText":"Are you sure you want to delete this?","eeCancelText":"Cancel","eeCopyLinkText":"The Link Has Been Copied","eeUploadLimitText":"Upload Limit","eeFileTooLargeText":"This file is too large","eeFileNotAllowedText":"This file type is not allowed","eeUploadErrorText":"Upload Failed","eeFilesSelected":"Files Selected","eeShowText":"Show","eeHideText":"Hide"};
+//# sourceURL=ee-simple-file-list-js-foot-js-extra
+/* ]]> */
+
+
+
+
+
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LfmjZUpAAAAAOyt_hTsOZvo1ewb6PKw1aOUdsg3","actions":{"homepage":"homepage","contactform":"contactform"}};
+//# sourceURL=wpcf7-recaptcha-js-extra
+/* ]]> */
+
+
+
+
+
+
+
+
+/* <![CDATA[ */
+var ezy_data = {"ezy_dir":"/home/wworyxprop/public_html/wp-content/themes/ezy-theme","ezy_uri":"https://oryxprop.com/wp-content/themes/ezy-theme","site_url":"https://oryxprop.com","ajax_url":"https://oryxprop.com/wp-admin/admin-ajax.php"};
+//# sourceURL=ezy-theme-js-extra
+/* ]]> */
+
+
+
+/* <![CDATA[ */
+var ezy_init_data = {"enable_scroll_to_top":"1","enable_scroll_to_top_on_mobile":""};
+//# sourceURL=ezy-theme-init-js-extra
+/* ]]> */
+
+
+
+
+		
+	

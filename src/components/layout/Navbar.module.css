@@ -1,0 +1,102 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 1.5rem 0;
+  transition: all 0.4s ease;
+  color: var(--color-white);
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  color: var(--color-primary-navy);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.link {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.investorBtnWrapper {
+  margin-left: 1rem;
+}
+
+.investorBtn {
+  background-color: var(--color-primary-navy) !important;
+  color: var(--color-white) !important;
+}
+
+.scrolled .investorBtn {
+  background-color: var(--color-gold) !important;
+}
+
+@media (max-width: 992px) {
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary-navy);
+    flex-direction: column;
+    padding: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease;
+  }
+  .navLinks.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .link {
+    color: var(--color-white);
+    font-size: 1.125rem;
+  }
+  .mobileMenuBtn {
+    display: block;
+  }
+  .investorBtnWrapper {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .investorBtn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,1655 @@
+
+		
+		
+		
+		
+		
+			
+
+	
+		
+				
+		
+			
+				
+					
+						
+						
+					
+
+					
+					
+
+						
+						
+							
+								Home
+Company Overview
+
+	About Oryx Properties Limited
+	Directors
+	Our Team
+
+
+Our Properties
+
+	Retail
+	Industrial
+	Office
+	Residential
+	Spaces To Let
+
+
+Investors
+
+	Financial Reports
+	NENS Announcements
+	Debenture Trust Deed
+	DMTNP
+	Circulars
+	Share Trading
+
+
+News
+
+	Investor News
+
+
+CSR
+Careers
+	
+							
+						
+					
+				
+				
+					
+					
+	
+		
+			
+				Contact Us
+							
+		
+	
+
+					
+					
+			
+		
+					
+						
+													
+					
+
+			
+					
+						
+													
+					
+
+			
+	
+
+					
+					
+					
+
+	
+		
+		
+		
+	
+	
+		
+		
+	
+					
+				
+			
+		
+	
+			
+					
+		
+	       						
+					
+						Oryx’s property portfolio by sector (based on N$ value)Retail64%Industrial21%Office10%Residential5%
+	
+		
+			Our premium retail properties include the regional centre Maerual Mall Retail and Gustav Voigts Retail Centre in Windhoek, Namibia’s capital. We attract and retain quality tenants with a vacancy rate of 5.91% across commercial properties and 11.19% for residential complexes.
+
+		
+	
+VISION
+	
+		
+			
+To remain at the forefront of the Namibian listed property sector.
+To do this, we nurture our Namibian heritage and use innovative and progressive solutions to create sustainable economic, social and environmental benefits for our stakeholders.
+
+
+		
+	
+MISSION
+	
+		
+			
+Acquire premium-quality retail, industrial, office and residential properties and investments in property.
+This will be achieved by acquiring or developing properties with growing income streams from quality tenants to secure sustainable, dependable and predictable long-term earnings growth and capital appreciation.
+
+
+		
+	
+Directors
+	
+		
+			
+         
+            
+         
+                  
+            
+            
+               
+                  
+                     
+                        Independent Non-executive Chairperson                     
+                     
+                        Mr Vetumbuavi Mungunda                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        CEO and Executive Director                     
+                     
+                        Mr Ben Jooste                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Independent Non-executive Director, RNC Chairperson                     
+                     
+                        Ms Jenny Comalie                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Independent Non-executive Director, IC Chairperson                     
+                     
+                        Mr Marius Muller                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Chief Financial Officer (CFO) and Executive Director                     
+                     
+                        Ms Francis Heunis                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Independent Non-executive Director                     
+                     
+                        Mr Stefan Hugo                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Independent Non-executive Director                     
+                     
+                        Mr Matthias Langheld                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Independent Non-executive Director                     
+                     
+                        Ms Toini Kondjeni Nkandi                     
+                                       
+               
+               
+               
+                                 
+         
+         
+
+
+
+
+.wpm_6310_modal_template_before, .wpm_6310_modal_template_after{
+  position: absolute;
+  cursor: pointer;
+  z-index: 99999999;
+  border-radius: 50%;
+}
+.wpm_6310_modal_template_before{
+  content: url('https://oryxprop.com/wp-content/plugins/team-showcase-supreme/assets/images/prev.png');
+  left: -50px;
+  top: calc(50% - 30px);
+}
+.wpm_6310_modal_template_after{
+  content: url('https://oryxprop.com/wp-content/plugins/team-showcase-supreme/assets/images/next.png');
+  right: -50px;
+  top: calc(50% - 30px);
+}
+.wpm_6310_team_style_1{
+  height: 100%;
+}
+.wpm-6310-no-carousel {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+.wpm-6310-item-1{
+    width: 100% !important;
+}
+.wpm-6310-owl-stage{
+  display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 10317px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.wpm-6310-owl-item{
+  display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto !important;
+}
+  .wpm-6310-tooltip:hover:after {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: rgba(0, 119, 181, 1);
+  border-radius: 5px;
+  color: #fff;
+  content: attr(tooltip-href);
+  margin: -85px 5px 0;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 999;
+  min-width: 140px;
+}
+.wpm_main_template{
+  position: relative;
+  z-index: 0;
+}
+.wpm_main_template *, .wpm_6310_modal * {
+  box-sizing: border-box !important;
+  word-break: break-word !important; 
+}
+.wpm-6310-row img, .wpm-6310-owl-item img{
+  float: left !important;
+  width: 100% !important;
+}
+.wpm_main_template, .wpm_main_template a{
+  box-shadow: none !important;
+}
+.wpm-6310-row{
+  width: 100%;
+  clear: both;
+  text-align: center;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wpm-6310-img-responsive{
+  width: 100%;
+  height: auto;
+}
+.wpm_6310_team_style_1 figcaption{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.wpm-6310-owl-carousel .wpm-6310-item-1{
+  padding: 5px 0;
+}
+.wpm_6310_team_member_info{
+  cursor: pointer;
+}
+.wpm-6310-col-1{
+  width: 100%;
+  margin-bottom: 30px !important;
+  float: left;
+  position: relative;
+}
+.wpm-6310-col-2, .wpm-6310-col-3, .wpm-6310-col-4, .wpm-6310-col-5, .wpm-6310-col-6{
+  margin-bottom: 30px !important;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  vertical-align: top;
+  padding: 0  !important;
+}
+.wpm-6310-col-2{
+  width: calc(50% - 30px);
+}
+.wpm-6310-col-3{
+  width: calc(33.33% - 30px);
+}
+.wpm-6310-col-4{
+  width: calc(25% - 30px);
+}
+.wpm-6310-col-5{
+  width: calc(20% - 30px);
+}
+.wpm-6310-col-6{
+  width: calc(16.6667% - 30px);
+}
+ul.wpm_6310_team_style_1_social li a{
+  line-height: 35px !important;
+  width: 37px !important;
+  height: 37px !important; 
+}
+ul.wpm_6310_team_style_1_social i[class*="fa-"]{
+  line-height: 35px !important;
+  width: 35px !important;
+  height: 35px !important;;
+}
+@media screen and (max-width: 767px) {
+  .wpm-6310-col-2, .wpm-6310-col-3, .wpm-6310-col-4, .wpm-6310-col-5, .wpm-6310-col-6{
+    width: 100% !important;
+  }
+}
+
+
+.wpm_6310_modal, .wpm_6310_loading {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999999; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  font-family: sans-serif;
+}
+/* wpm_6310_modal Content */
+.wpm_6310_modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 75%;
+  border-radius: 5px;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  margin-bottom: 50px;
+}
+/* Add Animation */
+@-webkit-keyframes wpm-animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes wpm-animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes wpm-animatebottom {
+  from {bottom:-300px; opacity:0}
+  to {bottom:0; opacity:1}
+}
+@-webkit-keyframes wpm-animatebottom {
+  from {bottom:-300px; opacity:0}
+  to {bottom:0; opacity:1}
+}
+@keyframes wpm-animateleft {
+  from {left:-300px; opacity:0}
+  to {left:0; opacity:1}
+}
+@-webkit-keyframes wpm-animateleft {
+  from {left:-300px; opacity:0}
+  to {left:0; opacity:1}
+}
+@keyframes wpm-animateright {
+  from {right:-300px; opacity:0}
+  to {right:0; opacity:1}
+}
+@-webkit-keyframes wpm-animateright {
+  from {right:-300px; opacity:0}
+  to {right:0; opacity:1}
+}
+/* The Close Button */
+.wpm-6310-close {
+  color: #000;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  z-index: 999;
+}
+.wpm-6310-close:hover,
+.wpm-6310-close:focus {
+  color: #878787;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wpm_6310_modal_body_picture {
+  float: left;
+  width: 300px;
+  padding-right: 15px;}
+  .wpm_6310_modal_body_content{
+    width: calc(100% - 315px);
+    float: left;
+  }
+  .wpm_6310_modal_body_picture img{
+    width: calc(100% - 12px) !important;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  #wpm_6310_modal_designation{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #727272
+  }
+  #wpm_6310_modal_name{
+    text-transform: capitalize;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0 0 25px;
+    font-weight: 600;
+    color: #272727;
+  }
+  #wpm_6310_modal_details, #wpm_6310_modal_details p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #272727;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+  .wpm_6310_modal_social a{
+    width: 36px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    float:  left;
+    margin: 15px 10px 0 0 !important;
+    font-size: 18px !important;
+    border-radius: 3px !important;
+    text-align: center !important;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    padding: 0;
+    box-shadow: none;
+    text-decoration: none;
+  }
+  .wpm_6310_modal_social a i {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+  .wpm_6310_modal_social a:hover{
+    box-shadow: none;
+  }
+  .wpm_6310_modal .wpm_6310_modal_social{
+    float: left;
+    position: relative;
+    width: 100%
+  }
+  .wpm_6310_modal .wpm-6310-tooltip:hover:after{
+    margin-left: -60px !important;
+  }
+  .wpm_6310_modal-footer {
+    padding: 10px 15px;
+    color: white;
+  }
+  br.wpm_6310_clear{
+    clear: both;
+  }
+  .mywpm_6310_modal{
+    display: none;
+  }
+  .wpm_6310_loading{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-top: 170px; /* Location of the box */
+    text-align: center;
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    display:none;
+  }
+  .wpm_6310_loading img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+  }
+  @media only screen and (max-width: 600px) {
+    .wpm_6310_modal-content{
+      width: 90% !important;
+    }
+    .wpm-6310-close {
+      top: -20px;
+      right: 0;
+      font-size: 30px;
+      font-weight: 100;
+      color: lightgray;
+    }
+    .wpm_6310_modal_body_content, .wpm_6310_modal_body_picture img{
+      width: 100% !important;
+    }
+    .wpm_6310_modal_body_picture{
+      width: 100% !important;
+      padding: 0 !important;
+    }
+    #wpm_6310_modal_designation{
+      margin-top: 15px;
+    }
+  }
+
+
+
+  .wpm_6310_mmt_1 .wpm_6310_modal_template_1 {
+      float: left;
+      width: 100%;
+      padding: 20px;
+      background: #fefefe;
+      border: 1px solid #888;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm_6310_modal_body_picture img {
+      border: 1px solid #ccc;
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm_6310_modal_designation {
+      font-size: 14px;
+      line-height: 20px;
+      font-family: Arimo;
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    @media only screen and (max-width: 767px){
+      .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm_6310_modal_designation {
+        margin-top: 15px;
+      }
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm_6310_modal_name {
+      font-size: 22px;
+      line-height: 27px;
+      font-family: Arimo;
+      color: rgb(17, 1, 0);
+      text-transform: capitalize;
+      margin-bottom: 25px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm_6310_modal_details {
+      font-size: 14px;
+      line-height: 19px;
+      font-family: Arimo;
+      color: rgb(0, 0, 0);
+      line-height: calc(14px + 6px);
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm_6310_modal_contact {
+      padding: 0;
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm-custom-fields-list-label {
+      font-size: 18px;
+      font-family: Amaranth;
+      color: rgb(0, 100, 0);
+      font-weight: 300;
+      line-height: calc(18px + 2px);
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm-custom-fields-list:hover .wpm-custom-fields-list-label {
+      color: rgb(0, 0, 0);
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm-custom-fields-list-content {
+      font-size: 14px;
+      font-family: Amaranth;
+      color: rgb(0, 0, 0);
+      font-weight: 300;
+      line-height: calc(14px + 6px);
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm-custom-fields-list:hover .wpm-custom-fields-list-content {
+      color: rgb(0, 100, 0);
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_1 .wpm_6310_member_skills_wrapper .wpm_6310_skills_label_1 {
+      color: rgb(0, 0, 0) !important;
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_6 .wpm-custom-fields-list{
+      display: flex;
+    }
+    .wpm_6310_mmt_1 .wpm_6310_modal_template_4 .wpm_6310_member_skills_wrapper {
+        display: inline-block !important;
+        width: 80% !important;
+      }
+      .wpm_6310_mmt_1 .wpm_6310_modal_template_4 .wpm_6310_skills_prog_1 {
+        margin: auto !important;
+      }
+.wpm_6310_member_skills_wrapper_1, .wpm_6310_member_skills_wrapper {
+  margin: 0;
+  width: 100%;
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.wpm_6310_member_skills_wrapper_1 {
+  display: none;
+}
+.wpm_6310_modal .wpm_6310_member_skills_wrapper {
+  width: 50%;  
+}
+.wpm_6310_skills_label_1 {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgb(2, 4, 23);
+  font-weight: 100;
+  font-family: Amaranth;
+  line-height: 16px;
+  margin-bottom: 2px;
+  text-align: left;
+  display: block;
+}
+.wpm_6310_team_style_1:hover .wpm_6310_member_skills_wrapper_1 .wpm_6310_skills_label_1 {
+  color: rgb(5, 77, 125);
+}
+.wpm_6310_skills_prog_1 {
+  flex: 1;
+  height: 6px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border:  1px solid rgb(55, 110, 55);
+  background-color: rgb(255, 255, 255);
+  box-shadow: none;
+  -o-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+}
+  .wpm_6310_modal_template_4 .wpm_6310_skills_prog_1 {
+		margin: 0 5px;
+	}
+  .wpm_6310_modal_template_6 .wpm_6310_skills_prog_1 {
+		margin: 0 5px;
+	}
+	.wpm_6310_modal_template_6 .wpm_6310_member_skills_section{
+		justify-content: center !important;
+	}
+  .wpm_6310_modal_template_6 .wpm_6310_member_skills_wrapper{
+    align-items: center;
+  }
+  .wpm_6310_modal_template_6 .wpm_6310_skills_prog_1 .wpm-custom-fields-list{
+      display: flex;
+  }
+.wpm_6310_fill_1 {
+  float: left;
+  background-color: rgb(3, 142, 173);
+  height: 100%;
+  background-size: 20px 20px;
+  position: relative;
+} 
+.wpm_6310_skills_prog_1 .wpm-6310-tooltip-percent{
+    position: absolute;
+    width: 34px;
+    background-color: rgb(3, 142, 173);
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    right: -17px;
+    top: -29px;
+    display: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 11px;
+    border-radius: 2px;
+    transition: all .33s; 
+    font-family: Amaranth;
+  }		
+  .wpm_6310_skills_prog_1:hover .wpm-6310-tooltip-percent, 
+  .wpm_6310_skills_prog_1 .wpm_6310_skills_prog:hover .wpm-6310-tooltip-percent{
+    display: block
+  }
+  .wpm_6310_skills_prog_1 .wpm-6310-tooltip-percent::after {
+    position: absolute;
+    content: '';
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid rgb(3, 142, 173);
+    top: 20px;
+    right: 10px;
+    z-index: 1;
+  }
+  /* ################### Description CSS #################### */
+  .wpm_6310_team_style_1_description{
+    float: left;
+    width: 100%;
+    display:  none;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Amaranth !important;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .wpm_6310_team_style_1:hover .wpm_6310_team_style_1_description{
+    color: rgb(0, 0, 0);
+  }
+  .wpm-6310-p-l-r-10{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #wpm-6310-slider-1 .wpm-6310-owl-nav div.wpm-6310-owl-prev i[class*="fa-"], #wpm-6310-slider-1 .wpm-6310-owl-nav div.wpm-6310-owl-next i[class*="fa-"]{
+    line-height: 36px !important;
+  }
+  .wpm_6310_team_member_internal_link{
+   cursor: pointer;
+}
+    
+    ul.wpm_6310_team_style_1_social{
+      padding: 0 !important;
+      list-style: none !important;
+    }
+    ul.wpm_6310_team_style_1_social li{
+      display: inline-block !important;
+      padding: 0 !important;
+    }
+    ul.wpm_6310_team_style_1_social li a{
+      display: inline-block !important;
+      box-shadow: none !important;
+      text-decoration: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    ul.wpm_6310_team_style_1_social li a:hover{
+      box-shadow: none !important;
+      text-decoration: none !important;
+    }
+    
+    
+
+		
+	
+Management Team
+	
+		
+			
+         
+            
+         
+                  
+            
+            
+               
+                  
+                     
+                        CEO and Executive Director                     
+                     
+                        Mr Ben Jooste                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Chief Asset Manager                     
+                     
+                        Mr Conrad van der Westhuizen                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Chief Financial Officer (CFO) and Executive Director                     
+                     
+                        Ms Francis Heunis                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Portfolio Manager                     
+                     
+                        Ms HANNELIE VAN DER MERWE                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Asset Manager                     
+                     
+                        Mr Lourens Anderson                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Finance Manager                     
+                     
+                        Mr Romanus Kampungu                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Chief Operating Officer                     
+                     
+                        Mr PJ Bergh                     
+                                       
+               
+               
+               
+                                 
+         
+         
+         
+            
+            
+               
+                  
+                     
+                        Portfolio Manager                     
+                     
+                        Ms Michelle Kapia                     
+                                       
+               
+               
+               
+                                 
+         
+         
+
+
+
+
+.wpm_6310_modal_template_before, .wpm_6310_modal_template_after{
+  position: absolute;
+  cursor: pointer;
+  z-index: 99999999;
+  border-radius: 50%;
+}
+.wpm_6310_modal_template_before{
+  content: url('https://oryxprop.com/wp-content/plugins/team-showcase-supreme/assets/images/prev.png');
+  left: -50px;
+  top: calc(50% - 30px);
+}
+.wpm_6310_modal_template_after{
+  content: url('https://oryxprop.com/wp-content/plugins/team-showcase-supreme/assets/images/next.png');
+  right: -50px;
+  top: calc(50% - 30px);
+}
+.wpm_6310_team_style_2{
+  height: 100%;
+}
+.wpm-6310-no-carousel {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+.wpm-6310-item-2{
+    width: 100% !important;
+}
+.wpm-6310-owl-stage{
+  display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 10317px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.wpm-6310-owl-item{
+  display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto !important;
+}
+  .wpm-6310-tooltip:hover:after {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: rgba(0, 119, 181, 1);
+  border-radius: 5px;
+  color: #fff;
+  content: attr(tooltip-href);
+  margin: -85px 5px 0;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 999;
+  min-width: 140px;
+}
+.wpm_main_template{
+  position: relative;
+  z-index: 0;
+}
+.wpm_main_template *, .wpm_6310_modal * {
+  box-sizing: border-box !important;
+  word-break: break-word !important; 
+}
+.wpm-6310-row img, .wpm-6310-owl-item img{
+  float: left !important;
+  width: 100% !important;
+}
+.wpm_main_template, .wpm_main_template a{
+  box-shadow: none !important;
+}
+.wpm-6310-row{
+  width: 100%;
+  clear: both;
+  text-align: center;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wpm-6310-img-responsive{
+  width: 100%;
+  height: auto;
+}
+.wpm_6310_team_style_2 figcaption{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.wpm-6310-owl-carousel .wpm-6310-item-2{
+  padding: 5px 0;
+}
+.wpm_6310_team_member_info{
+  cursor: pointer;
+}
+.wpm-6310-col-1{
+  width: 100%;
+  margin-bottom: 30px !important;
+  float: left;
+  position: relative;
+}
+.wpm-6310-col-2, .wpm-6310-col-3, .wpm-6310-col-4, .wpm-6310-col-5, .wpm-6310-col-6{
+  margin-bottom: 30px !important;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  vertical-align: top;
+  padding: 0  !important;
+}
+.wpm-6310-col-2{
+  width: calc(50% - 30px);
+}
+.wpm-6310-col-3{
+  width: calc(33.33% - 30px);
+}
+.wpm-6310-col-4{
+  width: calc(25% - 30px);
+}
+.wpm-6310-col-5{
+  width: calc(20% - 30px);
+}
+.wpm-6310-col-6{
+  width: calc(16.6667% - 30px);
+}
+ul.wpm_6310_team_style_2_social li a{
+  line-height: 35px !important;
+  width: 37px !important;
+  height: 37px !important; 
+}
+ul.wpm_6310_team_style_2_social i[class*="fa-"]{
+  line-height: 35px !important;
+  width: 35px !important;
+  height: 35px !important;;
+}
+@media screen and (max-width: 767px) {
+  .wpm-6310-col-2, .wpm-6310-col-3, .wpm-6310-col-4, .wpm-6310-col-5, .wpm-6310-col-6{
+    width: 100% !important;
+  }
+}
+
+
+.wpm_6310_modal, .wpm_6310_loading {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999999; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  font-family: sans-serif;
+}
+/* wpm_6310_modal Content */
+.wpm_6310_modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 75%;
+  border-radius: 5px;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  margin-bottom: 50px;
+}
+/* Add Animation */
+@-webkit-keyframes wpm-animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes wpm-animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes wpm-animatebottom {
+  from {bottom:-300px; opacity:0}
+  to {bottom:0; opacity:1}
+}
+@-webkit-keyframes wpm-animatebottom {
+  from {bottom:-300px; opacity:0}
+  to {bottom:0; opacity:1}
+}
+@keyframes wpm-animateleft {
+  from {left:-300px; opacity:0}
+  to {left:0; opacity:1}
+}
+@-webkit-keyframes wpm-animateleft {
+  from {left:-300px; opacity:0}
+  to {left:0; opacity:1}
+}
+@keyframes wpm-animateright {
+  from {right:-300px; opacity:0}
+  to {right:0; opacity:1}
+}
+@-webkit-keyframes wpm-animateright {
+  from {right:-300px; opacity:0}
+  to {right:0; opacity:1}
+}
+/* The Close Button */
+.wpm-6310-close {
+  color: #000;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  z-index: 999;
+}
+.wpm-6310-close:hover,
+.wpm-6310-close:focus {
+  color: #878787;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wpm_6310_modal_body_picture {
+  float: left;
+  width: 300px;
+  padding-right: 15px;}
+  .wpm_6310_modal_body_content{
+    width: calc(100% - 315px);
+    float: left;
+  }
+  .wpm_6310_modal_body_picture img{
+    width: calc(100% - 12px) !important;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  #wpm_6310_modal_designation{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #727272
+  }
+  #wpm_6310_modal_name{
+    text-transform: capitalize;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0 0 25px;
+    font-weight: 600;
+    color: #272727;
+  }
+  #wpm_6310_modal_details, #wpm_6310_modal_details p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #272727;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+  .wpm_6310_modal_social a{
+    width: 36px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    float:  left;
+    margin: 15px 10px 0 0 !important;
+    font-size: 18px !important;
+    border-radius: 3px !important;
+    text-align: center !important;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    padding: 0;
+    box-shadow: none;
+    text-decoration: none;
+  }
+  .wpm_6310_modal_social a i {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+  .wpm_6310_modal_social a:hover{
+    box-shadow: none;
+  }
+  .wpm_6310_modal .wpm_6310_modal_social{
+    float: left;
+    position: relative;
+    width: 100%
+  }
+  .wpm_6310_modal .wpm-6310-tooltip:hover:after{
+    margin-left: -60px !important;
+  }
+  .wpm_6310_modal-footer {
+    padding: 10px 15px;
+    color: white;
+  }
+  br.wpm_6310_clear{
+    clear: both;
+  }
+  .mywpm_6310_modal{
+    display: none;
+  }
+  .wpm_6310_loading{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-top: 170px; /* Location of the box */
+    text-align: center;
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    display:none;
+  }
+  .wpm_6310_loading img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+  }
+  @media only screen and (max-width: 600px) {
+    .wpm_6310_modal-content{
+      width: 90% !important;
+    }
+    .wpm-6310-close {
+      top: -20px;
+      right: 0;
+      font-size: 30px;
+      font-weight: 100;
+      color: lightgray;
+    }
+    .wpm_6310_modal_body_content, .wpm_6310_modal_body_picture img{
+      width: 100% !important;
+    }
+    .wpm_6310_modal_body_picture{
+      width: 100% !important;
+      padding: 0 !important;
+    }
+    #wpm_6310_modal_designation{
+      margin-top: 15px;
+    }
+  }
+
+
+
+  .wpm_6310_mmt_2 .wpm_6310_modal_template_1 {
+      float: left;
+      width: 100%;
+      padding: 20px;
+      background: #fefefe;
+      border: 1px solid #888;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm_6310_modal_body_picture img {
+      border: 1px solid #ccc;
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm_6310_modal_designation {
+      font-size: 14px;
+      line-height: 20px;
+      font-family: Arimo;
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    @media only screen and (max-width: 767px){
+      .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm_6310_modal_designation {
+        margin-top: 15px;
+      }
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm_6310_modal_name {
+      font-size: 22px;
+      line-height: 27px;
+      font-family: Arimo;
+      color: rgb(17, 1, 0);
+      text-transform: capitalize;
+      margin-bottom: 25px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm_6310_modal_details {
+      font-size: 14px;
+      line-height: 19px;
+      font-family: Arimo;
+      color: rgb(0, 0, 0);
+      line-height: calc(14px + 6px);
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm_6310_modal_contact {
+      padding: 0;
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm-custom-fields-list-label {
+      font-size: 18px;
+      font-family: Amaranth;
+      color: rgb(0, 100, 0);
+      font-weight: 300;
+      line-height: calc(18px + 2px);
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm-custom-fields-list:hover .wpm-custom-fields-list-label {
+      color: rgb(0, 0, 0);
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm-custom-fields-list-content {
+      font-size: 14px;
+      font-family: Amaranth;
+      color: rgb(0, 0, 0);
+      font-weight: 300;
+      line-height: calc(14px + 6px);
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm-custom-fields-list:hover .wpm-custom-fields-list-content {
+      color: rgb(0, 100, 0);
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_1 .wpm_6310_member_skills_wrapper .wpm_6310_skills_label_2 {
+      color: rgb(0, 0, 0) !important;
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_6 .wpm-custom-fields-list{
+      display: flex;
+    }
+    .wpm_6310_mmt_2 .wpm_6310_modal_template_4 .wpm_6310_member_skills_wrapper {
+        display: inline-block !important;
+        width: 80% !important;
+      }
+      .wpm_6310_mmt_2 .wpm_6310_modal_template_4 .wpm_6310_skills_prog_2 {
+        margin: auto !important;
+      }
+.wpm_6310_member_skills_wrapper_2, .wpm_6310_member_skills_wrapper {
+  margin: 0;
+  width: 100%;
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.wpm_6310_member_skills_wrapper_2 {
+  display: none;
+}
+.wpm_6310_modal .wpm_6310_member_skills_wrapper {
+  width: 50%;  
+}
+.wpm_6310_skills_label_2 {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgb(2, 4, 23);
+  font-weight: 100;
+  font-family: Amaranth;
+  line-height: 16px;
+  margin-bottom: 2px;
+  text-align: left;
+  display: block;
+}
+.wpm_6310_team_style_2:hover .wpm_6310_member_skills_wrapper_2 .wpm_6310_skills_label_2 {
+  color: rgb(5, 77, 125);
+}
+.wpm_6310_skills_prog_2 {
+  flex: 1;
+  height: 6px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border:  1px solid rgb(55, 110, 55);
+  background-color: rgb(255, 255, 255);
+  box-shadow: none;
+  -o-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+}
+  .wpm_6310_modal_template_4 .wpm_6310_skills_prog_2 {
+		margin: 0 5px;
+	}
+  .wpm_6310_modal_template_6 .wpm_6310_skills_prog_2 {
+		margin: 0 5px;
+	}
+	.wpm_6310_modal_template_6 .wpm_6310_member_skills_section{
+		justify-content: center !important;
+	}
+  .wpm_6310_modal_template_6 .wpm_6310_member_skills_wrapper{
+    align-items: center;
+  }
+  .wpm_6310_modal_template_6 .wpm_6310_skills_prog_2 .wpm-custom-fields-list{
+      display: flex;
+  }
+.wpm_6310_fill_2 {
+  float: left;
+  background-color: rgb(3, 142, 173);
+  height: 100%;
+  background-size: 20px 20px;
+  position: relative;
+} 
+.wpm_6310_skills_prog_2 .wpm-6310-tooltip-percent{
+    position: absolute;
+    width: 34px;
+    background-color: rgb(3, 142, 173);
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    right: -17px;
+    top: -29px;
+    display: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 11px;
+    border-radius: 2px;
+    transition: all .33s; 
+    font-family: Amaranth;
+  }		
+  .wpm_6310_skills_prog_2:hover .wpm-6310-tooltip-percent, 
+  .wpm_6310_skills_prog_2 .wpm_6310_skills_prog:hover .wpm-6310-tooltip-percent{
+    display: block
+  }
+  .wpm_6310_skills_prog_2 .wpm-6310-tooltip-percent::after {
+    position: absolute;
+    content: '';
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid rgb(3, 142, 173);
+    top: 20px;
+    right: 10px;
+    z-index: 1;
+  }
+  /* ################### Description CSS #################### */
+  .wpm_6310_team_style_2_description{
+    float: left;
+    width: 100%;
+    display:  none;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Amaranth !important;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .wpm_6310_team_style_2:hover .wpm_6310_team_style_2_description{
+    color: rgb(0, 0, 0);
+  }
+  .wpm-6310-p-l-r-10{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #wpm-6310-slider-2 .wpm-6310-owl-nav div.wpm-6310-owl-prev i[class*="fa-"], #wpm-6310-slider-2 .wpm-6310-owl-nav div.wpm-6310-owl-next i[class*="fa-"]{
+    line-height: 36px !important;
+  }
+  .wpm_6310_team_member_internal_link{
+   cursor: pointer;
+}
+    
+    ul.wpm_6310_team_style_2_social{
+      padding: 0 !important;
+      list-style: none !important;
+    }
+    ul.wpm_6310_team_style_2_social li{
+      display: inline-block !important;
+      padding: 0 !important;
+    }
+    ul.wpm_6310_team_style_2_social li a{
+      display: inline-block !important;
+      box-shadow: none !important;
+      text-decoration: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    ul.wpm_6310_team_style_2_social li a:hover{
+      box-shadow: none !important;
+      text-decoration: none !important;
+    }
+    
+    
+
+		
+	
+
+					
+
+				
+			
+			
+				
+
+	
+			
+			
+			
+
+
+			
+		
+			
+			
+				
+				
+					
+						
+													
+															
+						
+					
+							
+		
+	
+	
+
+	
+		
+			
+				Copyrights © 2021. All Rights Reserved by Oryx Properties
+			
+			
+				
+			
+			
+				Website Designed by:   Wakaitu Web Solutions 
+			
+		
+	
+	
+				
+		
+
+		
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ezy-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+
+
+/* <![CDATA[ */
+var eesfl_vars = {"ajaxurl":"https://oryxprop.com/wp-admin/admin-ajax.php","eeEditText":"Edit","eeConfirmDeleteText":"Are you sure you want to delete this?","eeCancelText":"Cancel","eeCopyLinkText":"The Link Has Been Copied","eeUploadLimitText":"Upload Limit","eeFileTooLargeText":"This file is too large","eeFileNotAllowedText":"This file type is not allowed","eeUploadErrorText":"Upload Failed","eeFilesSelected":"Files Selected","eeShowText":"Show","eeHideText":"Hide"};
+//# sourceURL=ee-simple-file-list-js-foot-js-extra
+/* ]]> */
+
+
+
+
+
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LfmjZUpAAAAAOyt_hTsOZvo1ewb6PKw1aOUdsg3","actions":{"homepage":"homepage","contactform":"contactform"}};
+//# sourceURL=wpcf7-recaptcha-js-extra
+/* ]]> */
+
+
+
+
+
+
+
+
+
+/* <![CDATA[ */
+var ezy_data = {"ezy_dir":"/home/wworyxprop/public_html/wp-content/themes/ezy-theme","ezy_uri":"https://oryxprop.com/wp-content/themes/ezy-theme","site_url":"https://oryxprop.com","ajax_url":"https://oryxprop.com/wp-admin/admin-ajax.php"};
+//# sourceURL=ezy-theme-js-extra
+/* ]]> */
+
+
+
+/* <![CDATA[ */
+var ezy_init_data = {"enable_scroll_to_top":"1","enable_scroll_to_top_on_mobile":""};
+//# sourceURL=ezy-theme-init-js-extra
+/* ]]> */
+
+
+
+
+
+
+
+		
+	

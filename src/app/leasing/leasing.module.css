@@ -1,0 +1,187 @@
+.main {
+  width: 100%;
+}
+
+.leasingHero {
+  padding: 10rem 0 6rem;
+  background-color: var(--color-light-bg);
+  text-align: center;
+}
+
+.leasingHero h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-navy);
+}
+
+.leasingHero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  opacity: 0.8;
+}
+
+/* SEARCH WIDGET */
+.searchWidget {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin: 0 auto;
+  transform: translateY(50%);
+  position: relative;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+
+.searchField {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.searchField label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.searchField select, .searchField input {
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #f8f9fa;
+}
+
+.searchField select:focus, .searchField input:focus {
+  outline: none;
+  border-color: var(--color-primary-navy);
+}
+
+/* AVAILABILITY LIST */
+.availabilitySection {
+  padding: 10rem 0 6rem;
+  background-color: var(--color-white);
+}
+
+.listingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.listingCard {
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.listingCard:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transform: translateY(-5px);
+}
+
+.listingImage {
+  height: 200px;
+  background-color: #eee;
+  position: relative;
+}
+
+.listingImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badgeType {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--color-primary-navy);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.listingContent {
+  padding: 1.5rem;
+}
+
+.listingTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-navy);
+}
+
+.listingMeta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.listingSpecs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+}
+
+.specLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.specValue {
+  font-weight: 500;
+  color: var(--color-primary-navy);
+}
+
+/* ENQUIRY CTA */
+.enquirySection {
+  background-color: var(--color-primary-navy);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .searchWidget {
+    flex-direction: column;
+    transform: translateY(0);
+    margin-top: 3rem;
+  }
+  .availabilitySection {
+    padding-top: 4rem;
+  }
+  .listingGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .listingGrid {
+    grid-template-columns: 1fr;
+  }
+}

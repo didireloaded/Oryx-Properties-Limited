@@ -1,0 +1,159 @@
+.main {
+  width: 100%;
+  background-color: var(--color-light-bg);
+  min-height: 100vh;
+}
+
+.contactHero {
+  padding: 10rem 0 6rem;
+  background-color: var(--color-white);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contactHero h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: var(--color-primary-navy);
+  margin-bottom: 1.5rem;
+}
+
+.contactHero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+/* DEPARTMENTS (Service Portal) */
+.portalSection {
+  padding: 6rem 0;
+}
+
+.departmentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.deptCard {
+  background: var(--color-white);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: var(--radius-sm);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.deptCard:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-color: var(--color-primary-navy);
+}
+
+.deptIcon {
+  color: var(--color-gold);
+  margin-bottom: 2rem;
+}
+
+.deptCard h3 {
+  font-size: 1.5rem;
+  color: var(--color-primary-navy);
+  margin-bottom: 1rem;
+}
+
+.deptCard p {
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.deptContactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 2rem;
+}
+
+.deptContactList li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--color-primary-navy);
+}
+
+.deptContactList li:last-child {
+  margin-bottom: 0;
+}
+
+.deptContactList svg {
+  opacity: 0.5;
+}
+
+/* HEAD OFFICE SECTION */
+.officeSection {
+  background: var(--color-primary-navy);
+  color: var(--color-white);
+  padding: 8rem 0;
+}
+
+.officeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.officeDetails h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.addressBlock {
+  margin-bottom: 3rem;
+}
+
+.addressBlock h4 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+.addressBlock p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 500px;
+  background: #0A0F14; /* Map dark mode */
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.mapContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+@media (max-width: 992px) {
+  .departmentGrid {
+    grid-template-columns: 1fr;
+  }
+  .officeGrid {
+    grid-template-columns: 1fr;
+  }
+}

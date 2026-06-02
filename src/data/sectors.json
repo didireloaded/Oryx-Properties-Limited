@@ -1,0 +1,48 @@
+[
+  {
+    "id": "retail",
+    "name": "Retail",
+    "share": 64,
+    "occ": 98,
+    "assets": 5,
+    "top": [
+      "Maerua Mall",
+      "Dunes Mall",
+      "Baines Centre"
+    ]
+  },
+  {
+    "id": "industrial",
+    "name": "Industrial",
+    "share": 22,
+    "occ": 95,
+    "assets": 18,
+    "top": [
+      "Prosperita Park",
+      "Lafrenz Industrial",
+      "Elisenheim"
+    ]
+  },
+  {
+    "id": "office",
+    "name": "Office",
+    "share": 10,
+    "occ": 88,
+    "assets": 3,
+    "top": [
+      "Maerua Office Tower",
+      "Channel Life"
+    ]
+  },
+  {
+    "id": "residential",
+    "name": "Residential",
+    "share": 4,
+    "occ": 100,
+    "assets": 2,
+    "top": [
+      "Urban Village",
+      "Maerua Residential"
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "year": 2018,
+    "value": 2.1,
+    "cap": 0.8,
+    "occ": 92,
+    "div": 40,
+    "props": 18
+  },
+  {
+    "year": 2019,
+    "value": 2.5,
+    "cap": 0.9,
+    "occ": 93,
+    "div": 42,
+    "props": 20
+  },
+  {
+    "year": 2020,
+    "value": 2.8,
+    "cap": 1,
+    "occ": 91,
+    "div": 38,
+    "props": 22
+  },
+  {
+    "year": 2021,
+    "value": 2.9,
+    "cap": 1.1,
+    "occ": 90,
+    "div": 40,
+    "props": 22
+  },
+  {
+    "year": 2022,
+    "value": 3.2,
+    "cap": 1.2,
+    "occ": 94,
+    "div": 45,
+    "props": 24
+  },
+  {
+    "year": 2023,
+    "value": 3.8,
+    "cap": 1.3,
+    "occ": 95,
+    "div": 48,
+    "props": 26
+  },
+  {
+    "year": 2024,
+    "value": 4.2,
+    "cap": 1.4,
+    "occ": 95,
+    "div": 50,
+    "props": 27
+  },
+  {
+    "year": 2025,
+    "value": 4.5,
+    "cap": 1.5,
+    "occ": 96,
+    "div": 52,
+    "props": 28
+  },
+  {
+    "year": 2026,
+    "value": 4.7,
+    "cap": 1.5,
+    "occ": 96,
+    "div": 52.5,
+    "props": 28
+  }
+]

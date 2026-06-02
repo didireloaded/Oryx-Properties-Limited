@@ -1,0 +1,183 @@
+.main {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+/* EDITORIAL HERO */
+.editorialHero {
+  padding: 12rem 0 6rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.heroTitle {
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  color: var(--color-primary-navy);
+  max-width: 1000px;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 600px;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+/* TIMELINE SECTION */
+.timelineSection {
+  padding: 8rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.timelineGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6rem;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.timelineItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.timelineYear {
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.timelineContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.timelineContent p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+/* LEADERSHIP (EDITORIAL B&W) */
+.leadershipSection {
+  padding: 8rem 0;
+  background-color: var(--color-light-bg);
+}
+
+.editorialHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid var(--color-primary-navy);
+  padding-bottom: 1rem;
+}
+
+.editorialGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.leaderCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.leaderPhoto {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background-color: #e5e7eb;
+  margin-bottom: 1.5rem;
+  filter: grayscale(100%) contrast(1.1);
+  background-size: cover;
+  background-position: center;
+}
+
+.leaderName {
+  font-size: 1.25rem;
+  font-family: var(--font-heading);
+  color: var(--color-primary-navy);
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.leaderRole {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+/* GOVERNANCE */
+.governanceSection {
+  padding: 8rem 0;
+  background-color: var(--color-primary-navy);
+  color: var(--color-white);
+}
+
+.govGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.govList {
+  list-style: none;
+  padding: 0;
+}
+
+.govList li {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.govList li:first-child {
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.govList span {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .editorialGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 2rem;
+  }
+  .timelineGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .govGrid {
+    grid-template-columns: 1fr;
+  }
+  .editorialGrid {
+    grid-template-columns: 1fr;
+  }
+  .timelineItem {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

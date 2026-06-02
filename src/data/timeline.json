@@ -1,0 +1,130 @@
+[
+  {
+    "year": 2002,
+    "value": 188000000,
+    "formattedValue": "N$188 Million",
+    "event": "Listed on the NSX",
+    "impact": "14 commercial properties, including the initial phases of Maerua Mall.",
+    "isMilestone": true
+  },
+  {
+    "year": 2006,
+    "value": 561000000,
+    "formattedValue": "N$561 Million",
+    "event": "First Major Rights Issue",
+    "impact": "Concluded a rights issue of 6.5 million units, raising N$52 million.",
+    "isMilestone": false
+  },
+  {
+    "year": 2008,
+    "value": 716000000,
+    "formattedValue": "N$716 Million",
+    "event": "Prosperita Expansion",
+    "impact": "Acquired four erven in Prosperita, growing the portfolio to 23 properties.",
+    "isMilestone": false
+  },
+  {
+    "year": 2010,
+    "value": 908000000,
+    "formattedValue": "N$908 Million",
+    "event": "First Properties Outside Namibia",
+    "impact": "Extended the Maerua Mall Retail Node, which included the addition of the Deloitte office building.",
+    "isMilestone": false
+  },
+  {
+    "year": 2011,
+    "value": 1000000000,
+    "formattedValue": "N$1 Billion",
+    "event": "Exceeding N$1 Billion",
+    "impact": "Internalisation of the asset and finance management from Oryx Management Services.",
+    "isMilestone": true
+  },
+  {
+    "year": 2012,
+    "value": 1300000000,
+    "formattedValue": "N$1.3 Billion",
+    "event": "South African Industrial Expansion",
+    "impact": "Acquisition of two additional industrial properties in South Africa.",
+    "isMilestone": false
+  },
+  {
+    "year": 2014,
+    "value": 1900000000,
+    "formattedValue": "N$1.9 Billion",
+    "event": "Gustav Voigts Centre Acquisition",
+    "impact": "Represented a key milestone for Oryx. Concluded a rights issue of 11 million units, raising N$171 million.",
+    "isMilestone": false
+  },
+  {
+    "year": 2015,
+    "value": 2000000000,
+    "formattedValue": "N$2 Billion",
+    "event": "First DMTNP Programme",
+    "impact": "Established a Domestic Medium-Term Note Programme (DMTNP) of N$500 million.",
+    "isMilestone": true
+  },
+  {
+    "year": 2016,
+    "value": 2300000000,
+    "formattedValue": "N$2.3 Billion",
+    "event": "Continued Growth",
+    "impact": "Concluded a rights issue of 12 million units, raising N$76 million.",
+    "isMilestone": false
+  },
+  {
+    "year": 2018,
+    "value": 2600000000,
+    "formattedValue": "N$2.6 Billion",
+    "event": "Elisenheim Land Purchase",
+    "impact": "First issue from our DMTNP of N$128.7 million.",
+    "isMilestone": false
+  },
+  {
+    "year": 2019,
+    "value": 2900000000,
+    "formattedValue": "N$2.9 Billion",
+    "event": "First Investment Outside Southern Africa",
+    "impact": "Invested N$300 million Euro equivalent in Croatia through TPF International Limited (TIL).",
+    "isMilestone": false
+  },
+  {
+    "year": 2020,
+    "value": 2900000000,
+    "formattedValue": "N$2.9 Billion",
+    "event": "Inaugural Residential Investment",
+    "impact": "Acquired three tenanted residential complexes. Provided tenants with N$17.5m worth of COVID-19 rent relief.",
+    "isMilestone": false
+  },
+  {
+    "year": 2021,
+    "value": 2800000000,
+    "formattedValue": "N$2.8 Billion",
+    "event": "Maerua Mall Master Plan",
+    "impact": "Developed a comprehensive master plan for Maerua Mall Retail. Provided N$29.2 million of COVID-19 rent relief.",
+    "isMilestone": false
+  },
+  {
+    "year": 2022,
+    "value": 2900000000,
+    "formattedValue": "N$2.9 Billion",
+    "event": "20th Anniversary",
+    "impact": "Celebrated the 20th anniversary of our listing by unveiling a new and ambitious corporate strategy for 2025.",
+    "isMilestone": false
+  },
+  {
+    "year": 2023,
+    "value": 3000000000,
+    "formattedValue": "N$3 Billion",
+    "event": "Exceeding N$3 Billion",
+    "impact": "Secured an N$500 million mandate from the Government Institutions Pension Fund (GIPF) to establish an unlisted property fund.",
+    "isMilestone": true
+  },
+  {
+    "year": 2024,
+    "value": 4167000000,
+    "formattedValue": "N$4.167 Billion",
+    "event": "Exceeding N$4 Billion",
+    "impact": "Acquired Dunes Mall for N$628.25 million. Embarked on the first phase of a development project for Maerua Mall (N$50m).",
+    "isMilestone": true
+  }
+]
